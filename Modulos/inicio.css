@@ -1,0 +1,1057 @@
+/* =========================================================
+   KIVO - ESTILOS GENERALES
+   Basado en Bulma + diseño claro de KIVO
+========================================================= */
+
+:root {
+    /* COLORES PRINCIPALES KIVO */
+    --kivo-bg: #F8F5EF;
+    --kivo-white: #FFFDFC;
+
+    --kivo-purple: #5B3FB5;
+    --kivo-purple-light: #7254C6;
+    --kivo-purple-soft: #EEE9F7;
+
+    --kivo-text: #202020;
+    --kivo-text-secondary: #666666;
+    --kivo-text-light: #888888;
+
+    --kivo-border: #DED9D2;
+    --kivo-border-light: #EAE6DF;
+
+    --kivo-shadow: 0 4px 18px rgba(55, 40, 80, 0.07);
+
+    --kivo-radius: 12px;
+}
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+#bodyKivo {
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--kivo-bg);
+
+    color: var(--kivo-text);
+
+    font-family: "Inter", Arial, sans-serif;
+
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+#headerKivo {
+    width: 100%;
+
+    background-color: var(--kivo-bg);
+
+    border-bottom: 1px solid var(--kivo-border-light);
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+#navbarKivo {
+    min-height: 70px;
+
+    padding: 0 42px;
+
+    background-color: var(--kivo-bg);
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+#logoKivo {
+    padding-left: 0;
+    padding-right: 30px;
+
+    background: transparent !important;
+
+    color: var(--kivo-purple) !important;
+
+    font-size: 28px;
+
+    text-decoration: none;
+}
+
+#logoTexto {
+    font-size: 28px;
+
+    font-weight: 700;
+
+    letter-spacing: -1px;
+
+    color: var(--kivo-purple);
+}
+
+
+/* =========================================================
+   MENÚ
+========================================================= */
+
+#navbarMenu {
+    background-color: transparent;
+}
+
+#navbarStart {
+    align-items: center;
+}
+
+#navbarStart .navbar-item {
+    background: transparent;
+
+    color: var(--kivo-text-secondary);
+
+    font-size: 13px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    transition: all 0.2s ease;
+}
+
+#navbarStart .navbar-item:hover {
+    color: var(--kivo-purple);
+
+    background-color: var(--kivo-purple-soft);
+}
+
+
+/* ELEMENTO ACTIVO */
+
+#navInicio {
+    color: var(--kivo-purple) !important;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   LOGIN / REGISTRO
+========================================================= */
+
+#navbarLoginContainer {
+    gap: 8px;
+
+    background: transparent;
+}
+
+
+/* BOTÓN INICIAR SESIÓN */
+
+#btnIniciarSesion {
+    height: 38px;
+
+    padding: 0 18px;
+
+    background-color: transparent;
+
+    border: 1px solid var(--kivo-purple);
+
+    border-radius: 8px;
+
+    color: var(--kivo-purple);
+
+    font-weight: 500;
+
+    transition: all 0.2s ease;
+}
+
+#btnIniciarSesion:hover {
+    background-color: var(--kivo-purple-soft);
+
+    color: var(--kivo-purple);
+}
+
+
+/* BOTÓN REGISTRARSE */
+
+#btnRegistrate {
+    height: 38px;
+
+    padding: 0 18px;
+
+    background-color: var(--kivo-purple);
+
+    border: 1px solid var(--kivo-purple);
+
+    border-radius: 8px;
+
+    color: white;
+
+    font-weight: 500;
+
+    transition: all 0.2s ease;
+}
+
+#btnRegistrate:hover {
+    background-color: var(--kivo-purple-light);
+
+    border-color: var(--kivo-purple-light);
+
+    color: white;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+#heroKivo {
+    background-color: var(--kivo-bg);
+}
+
+#heroBody {
+    padding: 55px 42px 45px;
+}
+
+#heroColumns {
+    max-width: 1440px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   TEXTO HERO
+========================================================= */
+
+#heroTextColumn {
+    padding-right: 35px;
+}
+
+#heroTitulo {
+    margin-bottom: 16px;
+
+    color: var(--kivo-text);
+
+    font-size: 36px;
+
+    line-height: 1.15;
+
+    font-weight: 700;
+
+    letter-spacing: -1px;
+}
+
+#heroSubtitulo {
+    max-width: 500px;
+
+    margin-bottom: 25px;
+
+    color: var(--kivo-text-secondary);
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   BUSCADOR HERO
+========================================================= */
+
+#heroSearchField {
+    max-width: 520px;
+
+    margin-bottom: 0;
+}
+
+#inputBusquedaHero {
+    height: 44px;
+
+    background-color: var(--kivo-white);
+
+    border: 1px solid var(--kivo-border);
+
+    border-right: none;
+
+    border-radius: 10px 0 0 10px;
+
+    color: var(--kivo-text);
+
+    box-shadow: none;
+
+    font-size: 13px;
+}
+
+#inputBusquedaHero::placeholder {
+    color: #999999;
+}
+
+#inputBusquedaHero:focus {
+    border-color: var(--kivo-purple);
+
+    box-shadow: 0 0 0 2px rgba(91, 63, 181, 0.08);
+}
+
+
+/* BOTÓN BUSCAR */
+
+#btnBuscarHero {
+    width: 48px;
+
+    height: 44px;
+
+    background-color: var(--kivo-purple);
+
+    border: 1px solid var(--kivo-purple);
+
+    border-radius: 0 10px 10px 0;
+
+    color: white;
+
+    transition: all 0.2s ease;
+}
+
+#btnBuscarHero:hover {
+    background-color: var(--kivo-purple-light);
+}
+
+
+/* =========================================================
+   IMAGEN HERO
+========================================================= */
+
+#heroImageColumn {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+#heroImageContainer {
+    width: 100%;
+
+    max-width: 680px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background-color: var(--kivo-white);
+
+    box-shadow: var(--kivo-shadow);
+}
+
+#heroImage {
+    display: block;
+
+    width: 100%;
+
+    height: 310px;
+
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   CATEGORÍAS
+========================================================= */
+
+#categoriasSection {
+    padding: 12px 42px;
+
+    background-color: var(--kivo-white);
+
+    border-top: 1px solid var(--kivo-border-light);
+
+    border-bottom: 1px solid var(--kivo-border-light);
+}
+
+#categoriasContainer {
+    max-width: 1440px;
+
+    margin: 0 auto;
+}
+
+#categoriasTags {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin: 0;
+}
+
+
+/* CATEGORÍAS */
+
+#categoriasTags .tag {
+    height: 32px;
+
+    padding: 0 14px;
+
+    background-color: var(--kivo-white);
+
+    border: 1px solid var(--kivo-border);
+
+    border-radius: 18px;
+
+    color: var(--kivo-text-secondary);
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+#categoriasTags .tag:hover {
+    border-color: var(--kivo-purple);
+
+    color: var(--kivo-purple);
+
+    background-color: var(--kivo-purple-soft);
+}
+
+
+/* CATEGORÍA TODOS */
+
+#categoriaTodos {
+    background-color: var(--kivo-purple) !important;
+
+    border-color: var(--kivo-purple) !important;
+
+    color: white !important;
+}
+
+
+/* BOTÓN FILTROS */
+
+#btnFiltros {
+    margin-left: auto;
+
+    height: 32px;
+
+    padding: 0 15px;
+
+    background-color: var(--kivo-white);
+
+    border: 1px solid var(--kivo-border);
+
+    border-radius: 8px;
+
+    color: var(--kivo-text-secondary);
+
+    font-size: 12px;
+}
+
+#btnFiltros:hover {
+    border-color: var(--kivo-purple);
+
+    color: var(--kivo-purple);
+}
+
+
+/* =========================================================
+   SECCIONES GENERALES
+========================================================= */
+
+#productosSection,
+#emprendimientosSection {
+    padding: 35px 42px;
+}
+
+#productosContainer,
+#emprendimientosContainer {
+    max-width: 1440px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   TÍTULOS
+========================================================= */
+
+#productosTitulo,
+#emprendimientosTitulo {
+    margin-bottom: 0;
+
+    color: var(--kivo-text);
+
+    font-size: 20px;
+
+    font-weight: 600;
+}
+
+#linkVerTodosProductos,
+#linkVerTodosEmprendimientos {
+    color: var(--kivo-purple);
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+    text-decoration: none;
+}
+
+#linkVerTodosProductos:hover,
+#linkVerTodosEmprendimientos:hover {
+    color: var(--kivo-purple-light);
+
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   GRID DE PRODUCTOS
+========================================================= */
+
+#productosGrid {
+    margin-top: 10px;
+}
+
+
+/* =========================================================
+   TARJETAS DE PRODUCTOS
+========================================================= */
+
+#productoCard1,
+#productoCard2,
+#productoCard3,
+#productoCard4 {
+    height: 100%;
+
+    overflow: hidden;
+
+    background-color: var(--kivo-white);
+
+    border: 1px solid var(--kivo-border);
+
+    border-radius: var(--kivo-radius);
+
+    box-shadow: none;
+
+    transition: all 0.25s ease;
+}
+
+
+/* HOVER */
+
+#productoCard1:hover,
+#productoCard2:hover,
+#productoCard3:hover,
+#productoCard4:hover {
+    transform: translateY(-3px);
+
+    border-color: #CFC7DA;
+
+    box-shadow: var(--kivo-shadow);
+}
+
+
+/* =========================================================
+   IMÁGENES PRODUCTOS
+========================================================= */
+
+#productoImageContainer1,
+#productoImageContainer2,
+#productoImageContainer3,
+#productoImageContainer4 {
+    overflow: hidden;
+}
+
+#productoImageFigure1,
+#productoImageFigure2,
+#productoImageFigure3,
+#productoImageFigure4 {
+    height: 175px;
+}
+
+#productoImage1,
+#productoImage2,
+#productoImage3,
+#productoImage4 {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.3s ease;
+}
+
+#productoCard1:hover #productoImage1,
+#productoCard2:hover #productoImage2,
+#productoCard3:hover #productoImage3,
+#productoCard4:hover #productoImage4 {
+    transform: scale(1.03);
+}
+
+
+/* =========================================================
+   CONTENIDO PRODUCTOS
+========================================================= */
+
+#productoContent1,
+#productoContent2,
+#productoContent3,
+#productoContent4 {
+    position: relative;
+
+    padding: 15px;
+}
+
+
+/* CATEGORÍA PRODUCTO */
+
+#productoCategoria1,
+#productoCategoria2,
+#productoCategoria3,
+#productoCategoria4 {
+    display: inline-flex;
+
+    height: 22px;
+
+    margin-bottom: 8px;
+
+    padding: 0 8px;
+
+    background-color: var(--kivo-purple-soft);
+
+    border-radius: 6px;
+
+    color: var(--kivo-purple);
+
+    font-size: 10px;
+
+    font-weight: 500;
+}
+
+
+/* NOMBRE */
+
+#productoNombre1,
+#productoNombre2,
+#productoNombre3,
+#productoNombre4 {
+    margin-bottom: 5px;
+
+    color: var(--kivo-text);
+
+    font-size: 14px;
+
+    line-height: 1.3;
+
+    font-weight: 600;
+}
+
+
+/* VENDEDORES */
+
+#productoVendedor1,
+#productoVendedor2,
+#productoVendedor3,
+#productoVendedor4 {
+    margin-bottom: 8px;
+
+    color: var(--kivo-text-light);
+
+    font-size: 11px;
+}
+
+
+/* PRECIOS */
+
+#productoPrecio1,
+#productoPrecio2,
+#productoPrecio3,
+#productoPrecio4 {
+    color: var(--kivo-purple);
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   BOTONES FAVORITOS
+========================================================= */
+
+#btnFavoritoProducto1,
+#btnFavoritoProducto2,
+#btnFavoritoProducto3,
+#btnFavoritoProducto4 {
+    position: absolute;
+
+    top: 10px;
+
+    right: 10px;
+
+    width: 30px;
+
+    height: 30px;
+
+    padding: 0;
+
+    background-color: rgba(255, 253, 252, 0.95);
+
+    border: 1px solid var(--kivo-border);
+
+    border-radius: 50%;
+
+    color: var(--kivo-text-secondary);
+
+    font-size: 16px;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+
+    transition: all 0.2s ease;
+}
+
+#btnFavoritoProducto1:hover,
+#btnFavoritoProducto2:hover,
+#btnFavoritoProducto3:hover,
+#btnFavoritoProducto4:hover {
+    color: var(--kivo-purple);
+
+    border-color: var(--kivo-purple);
+
+    background-color: var(--kivo-purple-soft);
+}
+
+
+/* =========================================================
+   EMPRENDIMIENTOS
+========================================================= */
+
+#emprendimientosSection {
+    padding-top: 20px;
+
+    padding-bottom: 55px;
+}
+
+#emprendimientosGrid {
+    margin-top: 10px;
+}
+
+
+/* =========================================================
+   TARJETAS EMPRENDIMIENTOS
+========================================================= */
+
+#emprendimientoCard1,
+#emprendimientoCard2,
+#emprendimientoCard3,
+#emprendimientoCard4 {
+    height: 100%;
+
+    overflow: hidden;
+
+    background-color: var(--kivo-white);
+
+    border: 1px solid var(--kivo-border);
+
+    border-radius: var(--kivo-radius);
+
+    box-shadow: none;
+
+    transition: all 0.25s ease;
+}
+
+#emprendimientoCard1:hover,
+#emprendimientoCard2:hover,
+#emprendimientoCard3:hover,
+#emprendimientoCard4:hover {
+    transform: translateY(-3px);
+
+    box-shadow: var(--kivo-shadow);
+
+    border-color: #CFC7DA;
+}
+
+
+/* =========================================================
+   IMÁGENES EMPRENDIMIENTOS
+========================================================= */
+
+#emprendimientoImageFigure1,
+#emprendimientoImageFigure2,
+#emprendimientoImageFigure3,
+#emprendimientoImageFigure4 {
+    height: 150px;
+}
+
+#emprendimientoImage1,
+#emprendimientoImage2,
+#emprendimientoImage3,
+#emprendimientoImage4 {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.3s ease;
+}
+
+#emprendimientoCard1:hover #emprendimientoImage1,
+#emprendimientoCard2:hover #emprendimientoImage2,
+#emprendimientoCard3:hover #emprendimientoImage3,
+#emprendimientoCard4:hover #emprendimientoImage4 {
+    transform: scale(1.03);
+}
+
+
+/* =========================================================
+   CONTENIDO EMPRENDIMIENTOS
+========================================================= */
+
+#emprendimientoContent1,
+#emprendimientoContent2,
+#emprendimientoContent3,
+#emprendimientoContent4 {
+    padding: 15px;
+}
+
+
+/* NOMBRE */
+
+#emprendimientoNombre1,
+#emprendimientoNombre2,
+#emprendimientoNombre3,
+#emprendimientoNombre4 {
+    margin-bottom: 6px;
+
+    color: var(--kivo-text);
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* CATEGORÍA / CIUDAD */
+
+#emprendimientoCategoria1,
+#emprendimientoCategoria2,
+#emprendimientoCategoria3,
+#emprendimientoCategoria4 {
+    margin-bottom: 7px;
+
+    color: var(--kivo-purple);
+
+    font-size: 11px;
+}
+
+
+/* DESCRIPCIÓN */
+
+#emprendimientoDescripcion1,
+#emprendimientoDescripcion2,
+#emprendimientoDescripcion3,
+#emprendimientoDescripcion4 {
+    min-height: 35px;
+
+    margin-bottom: 12px;
+
+    color: var(--kivo-text-secondary);
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   BOTONES VER PERFIL
+========================================================= */
+
+#btnVerPerfil1,
+#btnVerPerfil2,
+#btnVerPerfil3,
+#btnVerPerfil4 {
+    height: 30px;
+
+    padding: 0 13px;
+
+    background-color: transparent;
+
+    border: 1px solid var(--kivo-purple);
+
+    border-radius: 7px;
+
+    color: var(--kivo-purple);
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    transition: all 0.2s ease;
+}
+
+#btnVerPerfil1:hover,
+#btnVerPerfil2:hover,
+#btnVerPerfil3:hover,
+#btnVerPerfil4:hover {
+    background-color: var(--kivo-purple);
+
+    color: white;
+}
+
+
+/* =========================================================
+   NAVBAR BURGER
+========================================================= */
+
+#navbarBurger span {
+    background-color: var(--kivo-purple);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media screen and (max-width: 1023px) {
+
+    #navbarKivo {
+        padding: 0 25px;
+    }
+
+    #navbarMenu {
+        background-color: var(--kivo-white);
+
+        box-shadow: var(--kivo-shadow);
+    }
+
+    #heroBody {
+        padding: 40px 25px;
+    }
+
+    #heroTitulo {
+        font-size: 32px;
+    }
+
+    #categoriasSection,
+    #productosSection,
+    #emprendimientosSection {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    #heroImage {
+        height: 280px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media screen and (max-width: 768px) {
+
+    #navbarKivo {
+        padding: 0 18px;
+    }
+
+    #heroBody {
+        padding: 30px 18px;
+    }
+
+    #heroTextColumn {
+        padding-right: 10px;
+    }
+
+    #heroTitulo {
+        font-size: 29px;
+    }
+
+    #heroSubtitulo {
+        font-size: 14px;
+    }
+
+    #heroImage {
+        height: 230px;
+    }
+
+    #categoriasSection {
+        padding: 12px 18px;
+    }
+
+    #categoriasTags {
+        overflow-x: auto;
+
+        flex-wrap: nowrap;
+
+        padding-bottom: 5px;
+    }
+
+    #categoriasTags .tag {
+        flex-shrink: 0;
+    }
+
+    #btnFiltros {
+        flex-shrink: 0;
+    }
+
+    #productosSection,
+    #emprendimientosSection {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    #productosGrid,
+    #emprendimientosGrid {
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+
+    #productosGrid .column,
+    #emprendimientosGrid .column {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+
+/* =========================================================
+   PANTALLAS PEQUEÑAS
+========================================================= */
+
+@media screen and (max-width: 480px) {
+
+    #logoTexto {
+        font-size: 25px;
+    }
+
+    #heroTitulo {
+        font-size: 26px;
+    }
+
+    #heroImage {
+        height: 200px;
+    }
+
+    #productoImageFigure1,
+    #productoImageFigure2,
+    #productoImageFigure3,
+    #productoImageFigure4 {
+        height: 160px;
+    }
+
+    #emprendimientoImageFigure1,
+    #emprendimientoImageFigure2,
+    #emprendimientoImageFigure3,
+    #emprendimientoImageFigure4 {
+        height: 140px;
+    }
+}

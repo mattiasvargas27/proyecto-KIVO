@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BULMA -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    >
+
+    <!-- CSS PROPIO DE KIVO -->
+    <link rel="stylesheet" href="inicio.css">
+
+    <title>KIVO - Descubre lo local</title>
+</head>
+
+<body id="bodyKivo">
+
+    <!-- =====================================================
+         HEADER / NAVBAR
+    ====================================================== -->
+
+    <header id="headerKivo">
+
+        <nav class="navbar" id="navbarKivo">
+
+            <div class="navbar-brand" id="navbarBrand">
+
+                <!-- LOGO -->
+                <a class="navbar-item" id="logoKivo" href="#">
+                    <strong id="logoTexto">KiVO</strong>
+                </a>
+
+                <!-- BOTÓN MENÚ MOBILE -->
+                <a
+                    role="button"
+                    class="navbar-burger"
+                    id="navbarBurger"
+                    aria-label="menu"
+                    aria-expanded="false"
+                    data-target="navbarMenu"
+                >
+                    <span id="burgerLinea1" aria-hidden="true"></span>
+                    <span id="burgerLinea2" aria-hidden="true"></span>
+                    <span id="burgerLinea3" aria-hidden="true"></span>
+                </a>
+
+            </div>
+
+            <!-- MENÚ -->
+            <div class="navbar-menu" id="navbarMenu">
+
+                <div class="navbar-start" id="navbarStart">
+
+                    <a class="navbar-item" id="navInicio" href="#">
+                        🏠 Inicio
+                    </a>
+
+                    <a class="navbar-item" id="navCatalogo" href="#">
+                        🛍️ Catálogo
+                    </a>
+
+                    <a class="navbar-item" id="navEmprendimientos" href="#">
+                        🏪 Emprendimientos
+                    </a>
+
+                    <a class="navbar-item" id="navFavoritos" href="#">
+                        ♡ Favoritos
+                    </a>
+
+                    <a class="navbar-item" id="navCerca" href="#">
+                        📍 Cerca de ti
+                    </a>
+
+                    <a class="navbar-item" id="navSoporte" href="#">
+                        ⚙ Soporte técnico
+                    </a>
+
+                </div>
+
+                <!-- LOGIN / REGISTRO -->
+                <div class="navbar-end" id="navbarEnd">
+
+                    <div class="navbar-item" id="navbarLoginContainer">
+
+                        <a
+                            class="button is-small"
+                            id="btnIniciarSesion"
+                            href="#"
+                        >
+                            Inicia sesión
+                        </a>
+
+                        <a
+                            class="button is-small"
+                            id="btnRegistrate"
+                            href="#"
+                        >
+                            Regístrate
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <main id="mainKivo">
+
+        <section class="hero" id="heroKivo">
+
+            <div class="hero-body" id="heroBody">
+
+                <div class="columns is-vcentered" id="heroColumns">
+
+                    <!-- TEXTO -->
+                    <div class="column is-5" id="heroTextColumn">
+
+                        <h1 class="title" id="heroTitulo">
+                            Descubre lo local,<br>
+                            elige lo extraordinario ✨
+                        </h1>
+
+                        <p class="subtitle" id="heroSubtitulo">
+                            Apoya emprendedores colombianos y descubre
+                            productos únicos hechos con pasión.
+                        </p>
+
+                        <!-- BUSCADOR -->
+                        <div class="field has-addons" id="heroSearchField">
+
+                            <div class="control is-expanded" id="heroSearchControl">
+
+                                <input
+                                    class="input"
+                                    id="inputBusquedaHero"
+                                    type="text"
+                                    placeholder="Busca productos o emprendimientos..."
+                                >
+
+                            </div>
+
+                            <div class="control" id="heroSearchButtonControl">
+
+                                <button
+                                    class="button"
+                                    id="btnBuscarHero"
+                                    type="button"
+                                >
+                                    🔍
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- IMAGEN HERO -->
+                    <div class="column is-7" id="heroImageColumn">
+
+                        <figure class="image" id="heroImageContainer">
+
+                            <img
+                                id="heroImage"
+                                src="assets/hero-kivo.jpg"
+                                alt="Productos de emprendimientos locales KIVO"
+                            >
+
+                        </figure>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CATEGORÍAS
+        ================================================== -->
+
+        <section class="section" id="categoriasSection">
+
+            <div class="container" id="categoriasContainer">
+
+                <div class="tags" id="categoriasTags">
+
+                    <button
+                        class="tag"
+                        id="categoriaTodos"
+                        type="button"
+                    >
+                        Todos
+                    </button>
+
+                    <button
+                        class="tag"
+                        id="categoriaAlimentos"
+                        type="button"
+                    >
+                        🍴 Alimentos
+                    </button>
+
+                    <button
+                        class="tag"
+                        id="categoriaArtesanias"
+                        type="button"
+                    >
+                        🧶 Artesanías
+                    </button>
+
+                    <button
+                        class="tag"
+                        id="categoriaModa"
+                        type="button"
+                    >
+                        👕 Moda
+                    </button>
+
+                    <button
+                        class="tag"
+                        id="categoriaBelleza"
+                        type="button"
+                    >
+                        ✨ Belleza
+                    </button>
+
+                    <button
+                        class="tag"
+                        id="categoriaHogar"
+                        type="button"
+                    >
+                        🏠 Hogar
+                    </button>
+
+                    <button
+                        class="tag"
+                        id="categoriaTecnologia"
+                        type="button"
+                    >
+                        💻 Tecnología
+                    </button>
+
+                    <!-- FILTROS -->
+                    <button
+                        class="button is-small"
+                        id="btnFiltros"
+                        type="button"
+                    >
+                        ⚱ Filtros
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PRODUCTOS DESTACADOS
+        ================================================== -->
+
+        <section class="section" id="productosSection">
+
+            <div class="container" id="productosContainer">
+
+                <!-- TÍTULO -->
+                <div class="level" id="productosHeader">
+
+                    <div class="level-left" id="productosHeaderLeft">
+
+                        <div class="level-item" id="productosTitleContainer">
+
+                            <h2 class="title is-5" id="productosTitulo">
+                                Productos destacados
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+                    <div class="level-right" id="productosHeaderRight">
+
+                        <div class="level-item" id="productosVerTodosContainer">
+
+                            <a
+                                class="link"
+                                id="linkVerTodosProductos"
+                                href="#"
+                            >
+                                Ver todos →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCTOS -->
+                <div class="columns is-multiline" id="productosGrid">
+
+
+                    <!-- PRODUCTO 1 -->
+                    <div class="column is-one-fifth" id="productoColumn1">
+
+                        <article class="card" id="productoCard1">
+
+                            <div class="card-image" id="productoImageContainer1">
+
+                                <figure class="image" id="productoImageFigure1">
+
+                                    <img
+                                        id="productoImage1"
+                                        src="assets/brownie.jpg"
+                                        alt="Brownie artesanal"
+                                    >
+
+                                </figure>
+
+                            </div>
+
+                            <div class="card-content" id="productoContent1">
+
+                                <span class="tag" id="productoCategoria1">
+                                    Comida
+                                </span>
+
+                                <h3 class="title is-6" id="productoNombre1">
+                                    Brownie Artesanal
+                                </h3>
+
+                                <p class="content" id="productoVendedor1">
+                                    Por Dulce Tradición
+                                </p>
+
+                                <strong id="productoPrecio1">
+                                    $8.000
+                                </strong>
+
+                                <button
+                                    class="button"
+                                    id="btnFavoritoProducto1"
+                                    type="button"
+                                    aria-label="Agregar a favoritos"
+                                >
+                                    ♡
+                                </button>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- PRODUCTO 2 -->
+                    <div class="column is-one-fifth" id="productoColumn2">
+
+                        <article class="card" id="productoCard2">
+
+                            <div class="card-image" id="productoImageContainer2">
+
+                                <figure class="image" id="productoImageFigure2">
+
+                                    <img
+                                        id="productoImage2"
+                                        src="assets/cafe.jpg"
+                                        alt="Café de origen premium"
+                                    >
+
+                                </figure>
+
+                            </div>
+
+                            <div class="card-content" id="productoContent2">
+
+                                <span class="tag" id="productoCategoria2">
+                                    Cafetería
+                                </span>
+
+                                <h3 class="title is-6" id="productoNombre2">
+                                    Café de Origen Premium
+                                </h3>
+
+                                <p class="content" id="productoVendedor2">
+                                    Por Montaña Negra
+                                </p>
+
+                                <strong id="productoPrecio2">
+                                    $28.000
+                                </strong>
+
+                                <button
+                                    class="button"
+                                    id="btnFavoritoProducto2"
+                                    type="button"
+                                    aria-label="Agregar a favoritos"
+                                >
+                                    ♡
+                                </button>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- PRODUCTO 3 -->
+                    <div class="column is-one-fifth" id="productoColumn3">
+
+                        <article class="card" id="productoCard3">
+
+                            <div class="card-image" id="productoImageContainer3">
+
+                                <figure class="image" id="productoImageFigure3">
+
+                                    <img
+                                        id="productoImage3"
+                                        src="assets/audifonos.jpg"
+                                        alt="Audífonos Apple 2 generación"
+                                    >
+
+                                </figure>
+
+                            </div>
+
+                            <div class="card-content" id="productoContent3">
+
+                                <span class="tag" id="productoCategoria3">
+                                    Tecnología
+                                </span>
+
+                                <h3 class="title is-6" id="productoNombre3">
+                                    Audífonos Apple 2 generación
+                                </h3>
+
+                                <p class="content" id="productoVendedor3">
+                                    TechLocal
+                                </p>
+
+                                <strong id="productoPrecio3">
+                                    $80.000
+                                </strong>
+
+                                <button
+                                    class="button"
+                                    id="btnFavoritoProducto3"
+                                    type="button"
+                                    aria-label="Agregar a favoritos"
+                                >
+                                    ♡
+                                </button>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- PRODUCTO 4 -->
+                    <div class="column is-one-fifth" id="productoColumn4">
+
+                        <article class="card" id="productoCard4">
+
+                            <div class="card-image" id="productoImageContainer4">
+
+                                <figure class="image" id="productoImageFigure4">
+
+                                    <img
+                                        id="productoImage4"
+                                        src="assets/skincare.jpg"
+                                        alt="Kit skincare natural"
+                                    >
+
+                                </figure>
+
+                            </div>
+
+                            <div class="card-content" id="productoContent4">
+
+                                <span class="tag" id="productoCategoria4">
+                                    Belleza
+                                </span>
+
+                                <h3 class="title is-6" id="productoNombre4">
+                                    Kit Skincare Natural
+                                </h3>
+
+                                <p class="content" id="productoVendedor4">
+                                    Por Tierra Viva
+                                </p>
+
+                                <strong id="productoPrecio4">
+                                    $42.000
+                                </strong>
+
+                                <button
+                                    class="button"
+                                    id="btnFavoritoProducto4"
+                                    type="button"
+                                    aria-label="Agregar a favoritos"
+                                >
+                                    ♡
+                                </button>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             EMPRENDIMIENTOS DESTACADOS
+        ================================================== -->
+
+        <section class="section" id="emprendimientosSection">
+
+            <div class="container" id="emprendimientosContainer">
+
+                <!-- ENCABEZADO -->
+                <div class="level" id="emprendimientosHeader">
+
+                    <div class="level-left" id="emprendimientosHeaderLeft">
+
+                        <div
+                            class="level-item"
+                            id="emprendimientosTitleContainer"
+                        >
+
+                            <h2
+                                class="title is-5"
+                                id="emprendimientosTitulo"
+                            >
+                                Emprendimientos destacados
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+                    <div class="level-right" id="emprendimientosHeaderRight">
+
+                        <div
+                            class="level-item"
+                            id="emprendimientosVerTodosContainer"
+                        >
+
+                            <a
+                                class="link"
+                                id="linkVerTodosEmprendimientos"
+                                href="#"
+                            >
+                                Ver todos →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- GRID EMPRENDIMIENTOS -->
+                <div
+                    class="columns is-multiline"
+                    id="emprendimientosGrid"
+                >
+
+
+                    <!-- EMPRENDIMIENTO 1 -->
+                    <div
+                        class="column is-one-quarter"
+                        id="emprendimientoColumn1"
+                    >
+
+                        <article
+                            class="card"
+                            id="emprendimientoCard1"
+                        >
+
+                            <div
+                                class="card-image"
+                                id="emprendimientoImageContainer1"
+                            >
+
+                                <figure
+                                    class="image"
+                                    id="emprendimientoImageFigure1"
+                                >
+
+                                    <img
+                                        id="emprendimientoImage1"
+                                        src="assets/sabores-casa.jpg"
+                                        alt="Sabores de Casa"
+                                    >
+
+                                </figure>
+
+                            </div>
+
+                            <div
+                                class="card-content"
+                                id="emprendimientoContent1"
+                            >
+
+                                <h3
+                                    class="title is-6"
+                                    id="emprendimientoNombre1"
+                                >
+                                    Sabores de Casa
+                                </h3>
+
+                                <p
+                                    class="content"
+                                    id="emprendimientoCategoria1"
+                                >
+                                    🍴 Alimentos · Bogotá
+                                </p>
+
+                                <p
+                                    class="content"
+                                    id="emprendimientoDescripcion1"
+                                >
+                                    Restaurante de comida casera
+                                    colombiana con recetas tradicionales.
+                                </p>
+
+                                <a
+                                    class="button is-small"
+                                    id="btnVerPerfil1"
+                                    href="#"
+                                >
+                                    Ver perfil
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- EMPRENDIMIENTO 2 -->
+                    <div
+                        class="column is-one-quarter"
+                        id="emprendimientoColumn2"
+                    >
+
+                        <article
+                            class="card"
+                            id="emprendimientoCard2"
+                        >
+
+                            <div
+                                class="card-image"
+                                id="emprendimientoImageContainer2"
+                            >
+
+                                <figure
+                                    class="image"
+                                    id="emprendimientoImageFigure2"
+                                >
+
+                                    <img
+                                        id="emprendimientoImage2"
+                                        src="assets/montana-negra.jpg"
+                                        alt="Montaña Negra"
+                                    >
+
+                                </figure>
+
+                            </div>
+
+                            <div
+                                class="card-content"
+                                id="emprendimientoContent2"
+                            >
+
+                                <h3
+                                    class="title is-6"
+                                    id="emprendimientoNombre2"
+                                >
+                                    Montaña Negra
+                                </h3>
+
+                                <p
+                                    class="content"
+                                    id="emprendimientoCategoria2"
+                                >
+                                    ☕ Bebidas · Manizales
+                                </p>
+
+                                <p
+                                    class="content"
+                                    id="emprendimientoDescripcion2"
+                                >
+                                    Café de especialidad cultivado
+                                    en las montañas colombianas.
+                                </p>
+
+                                <a
+                                    class="button is-small"
+                                    id="btnVerPerfil2"
+                                    href="#"
+                                >
+                                    Ver perfil
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- EMPRENDIMIENTO 3 -->
+                    <div
+                        class="column is-one-quarter"
+                        id="emprendimientoColumn3"
+                    >
+
+                        <article
+                            class="card"
+                            id="emprendimientoCard3"
+                        >
+
+                            <div
+                                class="card-image"
+                                id="emprendimientoImageContainer3"
+                            >
+
+                                <figure
+                                    class="image"
+                                    id="emprendimientoImageFigure3"
+                                >
+
+                                    <img
+                                        id="emprendimientoImage3"
+                                        src="assets/studio-bella.jpg"
+                                        alt="Studio Bella"
+                                    >
+
+                                </figure>
+
+                            </div>
+
+                            <div
+                                class="card-content"
+                                id="emprendimientoContent3"
+                            >
+
+                                <h3
+                                    class="title is-6"
+                                    id="emprendimientoNombre3"
+                                >
+                                    Studio Bella
+                                </h3>
+
+                                <p
+                                    class="content"
+                                    id="emprendimientoCategoria3"
+                                >
+                                    ✨ Belleza · Bogotá
+                                </p>
+
+                                <p
+                                    class="content"
+                                    id="emprendimientoDescripcion3"
+                                >
+                                    Belleza y cuidado personal
+                                    con productos naturales.
+                                </p>
+
+                                <a
+                                    class="button is-small"
+                                    id="btnVerPerfil3"
+                                    href="#"
+                                >
+                                    Ver perfil
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- EMPRENDIMIENTO 4 -->
+                    <div
+                        class="column is-one-quarter"
+                        id="emprendimientoColumn4"
+                    >
+
+                        <article
+                            class="card"
+                            id="emprendimientoCard4"
+                        >
+
+                            <div
+                                class="card-image"
+                                id="emprendimientoImageContainer4"
+                            >
+
+                                <figure
+                                    class="image"
+                                    id="emprendimientoImageFigure4"
+                                >
+
+                                    <img
+                                        id="emprendimientoImage4"
+                                        src="assets/techlocal.jpg"
+                                        alt="TechLocal"
+                                    >
+
+                                </figure>
+
+                            </div>
+
+                            <div
+                                class="card-content"
+                                id="emprendimientoContent4"
+                            >
+
+                                <h3
+                                    class="title is-6"
+                                    id="emprendimientoNombre4"
+                                >
+                                    TechLocal
+                                </h3>
+
+                                <p
+                                    class="content"
+                                    id="emprendimientoCategoria4"
+                                >
+                                    💻 Tecnología · Medellín
+                                </p>
+
+                                <p
+                                    class="content"
+                                    id="emprendimientoDescripcion4"
+                                >
+                                    Accesorios y soluciones
+                                    tecnológicas con servicio personalizado.
+                                </p>
+
+                                <a
+                                    class="button is-small"
+                                    id="btnVerPerfil4"
+                                    href="#"
+                                >
+                                    Ver perfil
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
