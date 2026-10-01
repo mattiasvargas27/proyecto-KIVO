@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>KIVO - Catálogo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    />
+
+    <link rel="stylesheet" href="catalogo.css" />
+  </head>
+
+  <body id="bodyKivo">
+    <!-- =====================================================
+         HEADER / NAVBAR
+    ====================================================== -->
+
+    <header id="headerKivo">
+      <nav class="navbar" id="navbarKivo">
+        <div class="navbar-brand" id="navbarBrand">
+          <!-- LOGO -->
+          <a class="navbar-item" id="logoKivo" href="#">
+            <strong id="logoTexto">KiVO</strong>
+          </a>
+
+          <!-- BOTÓN MENÚ MOBILE -->
+          <a
+            role="button"
+            class="navbar-burger"
+            id="navbarBurger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarMenu"
+          >
+            <span id="burgerLinea1" aria-hidden="true"></span>
+            <span id="burgerLinea2" aria-hidden="true"></span>
+            <span id="burgerLinea3" aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <!-- MENÚ -->
+        <div class="navbar-menu" id="navbarMenu">
+          <div class="navbar-start" id="navbarStart">
+            <a class="navbar-item" id="navInicio" href="#"> ⌂ Inicio </a>
+
+            <a class="navbar-item" id="navCatalogo" href="#"> ▦ Catálogo </a>
+
+            <a class="navbar-item" id="navEmprendimientos" href="#">
+              ▣ Emprendimientos
+            </a>
+
+            <a class="navbar-item" id="navFavoritos" href="#"> ♡ Favoritos </a>
+
+            <a class="navbar-item" id="navCerca" href="#"> ⚲ Cerca de ti </a>
+
+            <a class="navbar-item" id="navSoporte" href="#">
+              ⚙ Soporte técnico
+            </a>
+          </div>
+
+          <!-- LOGIN / REGISTRO -->
+          <div class="navbar-end" id="navbarEnd">
+            <div class="navbar-item" id="navbarLoginContainer">
+              <a class="button is-small" id="btnIniciarSesion" href="#">
+                Inicia sesión
+              </a>
+
+              <a class="button is-small" id="btnRegistrate" href="#">
+                Regístrate
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="pagina">
+      <section class="encabezado-catalogo">
+        <div class="titulo-catalogo">
+          <p>Catálogo</p>
+
+          <h1>
+            Explora nuestro
+            <span>catálogo</span>
+            de productos
+          </h1>
+
+          <small>
+            Encuentra productos, apoya emprendimientos locales y sé parte de un
+            impacto positivo en tu comunidad.
+          </small>
+        </div>
+
+        <div class="imagen-principal">
+          <img src="" alt="Productos KIVO" />
+        </div>
+      </section>
+
+      <section class="buscador">
+        <input
+          type="text"
+          id="buscarProducto"
+          placeholder="Busca productos, emprendimientos o categorías..."
+        />
+
+        <button>🔍</button>
+      </section>
+
+      <section class="contenido-catalogo">
+        <aside class="sidebar">
+          <h3>Categorías</h3>
+
+          <button class="categoria activo" data-categoria="todos">
+            ▦ Todos
+
+            <span> 18 </span>
+          </button>
+
+          <button class="categoria" data-categoria="alimentos">
+            ▣ Alimentos
+
+            <span> 4 </span>
+          </button>
+          <button class="categoria" data-categoria="artesania">
+            ♧ Artesanía
+
+            <span> 3 </span>
+          </button>
+
+          <button class="categoria" data-categoria="ropa">
+            ▣ Ropa
+
+            <span> 4 </span>
+          </button>
+
+          <button class="categoria" data-categoria="hogar">
+            ⌂ Hogar
+
+            <span> 3 </span>
+          </button>
+
+          <button class="categoria" data-categoria="tecnologia">
+            ⚙ Tecnología
+
+            <span> 2 </span>
+          </button>
+
+          <button class="categoria" data-categoria="belleza">
+            ♡ Belleza
+
+            <span> 2 </span>
+          </button>
+
+          <hr />
+
+          <h3>Filtros</h3>
+
+          <p class="titulo-filtro">Precio</p>
+
+          <input
+            type="range"
+            min="0"
+            max="300000"
+            value="300000"
+            class="rango"
+          />
+
+          <div class="precios">
+            <span> $0 </span>
+
+            <span> $300.000+ </span>
+          </div>
+
+          <p class="titulo-filtro">Valoración</p>
+
+          <label class="check">
+            <input type="checkbox" />
+
+            ★★★★★
+          </label>
+
+          <label class="check">
+            <input type="checkbox" />
+
+            ★★★★☆ o más
+          </label>
+        </aside>
+
+        <section class="zona-productos">
+          <div class="titulo-productos">
+            <div>
+              <h2>Productos destacados</h2>
+
+              <p>
+                Productos ofrecidos por emprendimientos de nuestra comunidad.
+              </p>
+            </div>
+
+            <a href="emprendimientos.html"> Ver emprendimientos → </a>
+          </div>
+
+          <div class="productos" id="productos">
+            <article
+              class="producto"
+              data-categoria="alimentos"
+              data-nombre="Bowl de pollo teriyaki"
+            >
+              <div class="foto-producto">
+                <img
+                  src="AQUI_VA_EL_VINCULO_DE_LA_IMAGEN"
+                  alt="Bowl de pollo teriyaki"
+                />
+
+                <span> Alimentos </span>
+              </div>
+
+              <div class="info-producto">
+                <h3>Bowl de pollo teriyaki</h3>
+
+                <p>Sabor de Casa</p>
+
+                <strong> $18.000 </strong>
+              </div>
+            </article>
+
+            <article
+              class="producto"
+              data-categoria="alimentos"
+              data-nombre="Cafe especial"
+            >
+              <div class="foto-producto">
+                <img
+                  src="AQUI_VA_EL_VINCULO_DE_LA_IMAGEN"
+                  alt="Café especial"
+                />
+
+                <span> Alimentos </span>
+              </div>
+
+              <div class="info-producto">
+                <h3>Café especial de origen</h3>
+
+                <p>Café Local</p>
+
+                <strong> $22.000 </strong>
+              </div>
+            </article>
+
+            <article
+              class="producto"
+              data-categoria="ropa"
+              data-nombre="Buzo unisex"
+            >
+              <div class="foto-producto">
+                <img src="AQUI_VA_EL_VINCULO_DE_LA_IMAGEN" alt="Buzo unisex" />
+
+                <span> Ropa </span>
+              </div>
+
+              <div class="info-producto">
+                <h3>Buzo unisex algodón</h3>
+
+                <p>Tu Estilo</p>
+
+                <strong> $65.000 </strong>
+              </div>
+            </article>
+
+            <article
+              class="producto"
+              data-categoria="hogar"
+              data-nombre="Ventilador portátil"
+            >
+              <div class="foto-producto">
+                <img
+                  src="AQUI_VA_EL_VINCULO_DE_LA_IMAGEN"
+                  alt="Ventilador portátil"
+                />
+
+                <span> Hogar </span>
+              </div>
+
+              <div class="info-producto">
+                <h3>Ventilador portátil</h3>
+
+                <p>Hogar KIVO</p>
+
+                <strong> $45.000 </strong>
+              </div>
+            </article>
+
+            <article
+              class="producto"
+              data-categoria="tecnologia"
+              data-nombre="Audífonos inalámbricos"
+            >
+              <div class="foto-producto">
+                <img
+                  src="AQUI_VA_EL_VINCULO_DE_LA_IMAGEN"
+                  alt="Audífonos inalámbricos"
+                />
+
+                <span> Tecnología </span>
+              </div>
+
+              <div class="info-producto">
+                <h3>Audífonos inalámbricos</h3>
+
+                <p>Tecno Local</p>
+
+                <strong> $55.000 </strong>
+              </div>
+            </article>
+
+            <article
+              class="producto"
+              data-categoria="artesania"
+              data-nombre="Velas artesanales"
+            >
+              <div class="foto-producto">
+                <img
+                  src="AQUI_VA_EL_VINCULO_DE_LA_IMAGEN"
+                  alt="Velas artesanales"
+                />
+
+                <span> Artesanía </span>
+              </div>
+
+              <div class="info-producto">
+                <h3>Velas artesanales</h3>
+
+                <p>Manos Creativas</p>
+
+                <strong> $28.000 </strong>
+              </div>
+            </article>
+          </div>
+
+          <p id="sinProductos" class="sin-resultados">
+            No se encontraron productos.
+          </p>
+        </section>
+      </section>
+
+      <section class="banner-emprendedor">
+        <div class="icono-banner">⌂</div>
+
+        <div>
+          <h2>¿Tienes un emprendimiento?</h2>
+
+          <p>Únete a KIVO y lleva tu negocio al siguiente nivel.</p>
+        </div>
+
+        <a href="emprendimientos.html"> Conoce los emprendimientos → </a>
+      </section>
+    </main>
+
+    <script src="catalogo.js"></script>
+  </body>
+</html>

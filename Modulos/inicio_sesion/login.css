@@ -1,0 +1,841 @@
+/* =========================================================
+   KIVO - INICIO DE SESIÓN
+========================================================= */
+
+:root {
+
+    --kivo-bg: #F8F5EF;
+
+    --kivo-panel: #FFFDFC;
+
+    --kivo-purple: #5B3FB5;
+
+    --kivo-purple-light: #7254C6;
+
+    --kivo-purple-soft: #EEE9F7;
+
+    --kivo-text: #202020;
+
+    --kivo-text-secondary: #666666;
+
+    --kivo-text-light: #8A8A8A;
+
+    --kivo-border: #DED9D2;
+
+    --kivo-error: #B33A3A;
+
+}
+
+
+/* =========================================================
+   GENERAL
+========================================================= */
+
+#bodyLogin {
+
+    min-height: 100vh;
+
+    margin: 0;
+
+    background-color: var(--kivo-bg);
+
+    color: var(--kivo-text);
+
+    font-family: "Inter", Arial, sans-serif;
+
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+#headerLogin {
+
+    padding: 15px 28px 5px;
+
+}
+
+
+#logoLogin {
+
+    color: var(--kivo-purple);
+
+    font-size: 32px;
+
+    font-weight: 700;
+
+    letter-spacing: -1.5px;
+
+    text-decoration: none;
+
+}
+
+
+#headerLoginLeft {
+
+    gap: 12px;
+
+}
+
+
+#btnVolverInicioLogin {
+
+    height: 32px;
+
+    padding: 0 13px;
+
+    gap: 7px;
+
+    background: transparent;
+
+    border: 1px solid var(--kivo-purple);
+
+    border-radius: 7px;
+
+    color: var(--kivo-purple);
+
+    font-size: 12px;
+
+}
+
+
+#btnVolverInicioLogin:hover {
+
+    background-color: var(--kivo-purple-soft);
+
+}
+
+
+#questionRegistro {
+
+    margin-right: 14px;
+
+    color: var(--kivo-text-secondary);
+
+    font-size: 12px;
+
+}
+
+
+#btnRegistroHeader {
+
+    height: 32px;
+
+    padding: 0 18px;
+
+    background: transparent;
+
+    border: 1px solid var(--kivo-purple);
+
+    border-radius: 7px;
+
+    color: var(--kivo-purple);
+
+    font-size: 12px;
+
+}
+
+
+#btnRegistroHeader:hover {
+
+    background-color: var(--kivo-purple-soft);
+
+}
+
+
+/* =========================================================
+   CONTENIDO
+========================================================= */
+
+#mainLogin {
+
+    display: flex;
+
+    justify-content: center;
+
+    padding: 20px 20px 35px;
+
+}
+
+
+#loginContainer {
+
+    display: flex;
+
+    justify-content: center;
+
+    width: 100%;
+
+}
+
+
+#loginBox {
+
+    width: 100%;
+
+    max-width: 620px;
+
+    padding: 25px 42px 27px;
+
+    background-color: var(--kivo-panel);
+
+    border: 1px solid var(--kivo-border);
+
+    border-radius: 9px;
+
+    box-shadow:
+        0 8px 25px rgba(70, 50, 100, 0.07);
+
+}
+
+
+/* =========================================================
+   ENCABEZADO
+========================================================= */
+
+#loginHeading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    margin-bottom: 20px;
+
+}
+
+
+#loginIcon {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 45px;
+
+    height: 45px;
+
+    background-color: var(--kivo-purple);
+
+    border-radius: 50%;
+
+    color: white;
+
+    font-size: 19px;
+
+}
+
+
+#loginTitulo {
+
+    margin: 0 0 2px;
+
+    color: var(--kivo-text);
+
+    font-size: 21px;
+
+    font-weight: 700;
+
+}
+
+
+#loginSubtitulo {
+
+    margin: 0;
+
+    color: var(--kivo-text-secondary);
+
+    font-size: 9px;
+
+}
+
+
+/* =========================================================
+   CAMPOS
+========================================================= */
+
+#loginForm .field {
+
+    margin-bottom: 12px;
+
+}
+
+
+#loginForm .label {
+
+    margin-bottom: 4px;
+
+    color: var(--kivo-text);
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+}
+
+
+#loginForm .input {
+
+    height: 34px;
+
+    padding-left: 32px;
+
+    background-color: var(--kivo-panel);
+
+    border: 1px solid var(--kivo-border);
+
+    border-radius: 5px;
+
+    box-shadow: none;
+
+    color: var(--kivo-text);
+
+    font-size: 9px;
+
+}
+
+
+#loginForm .input::placeholder {
+
+    color: #999999;
+
+}
+
+
+#loginForm .input:focus {
+
+    border-color: var(--kivo-purple);
+
+    box-shadow:
+        0 0 0 1px rgba(91, 63, 181, 0.12);
+
+}
+
+
+#loginForm .icon {
+
+    height: 34px;
+
+    color: var(--kivo-text-light);
+
+    font-size: 11px;
+
+}
+
+
+/* =========================================================
+   CONTRASEÑA
+========================================================= */
+
+#controlLoginPassword {
+
+    position: relative;
+
+}
+
+
+.password-toggle {
+
+    position: absolute;
+
+    right: 5px;
+
+    top: 50%;
+
+    z-index: 5;
+
+    width: 25px;
+
+    height: 25px;
+
+    padding: 0;
+
+    transform: translateY(-50%);
+
+    border: none;
+
+    background: transparent;
+
+    color: var(--kivo-text-light);
+
+    cursor: pointer;
+
+}
+
+
+.password-toggle:hover {
+
+    color: var(--kivo-purple);
+
+}
+
+
+/* =========================================================
+   ERRORES
+========================================================= */
+
+.error-message {
+
+    margin: 3px 0 0;
+
+    color: var(--kivo-error) !important;
+
+    font-size: 8px;
+
+}
+
+
+/* =========================================================
+   OPCIONES
+========================================================= */
+
+#loginOptions {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin: -2px 0 14px;
+
+}
+
+
+#recordarContainer {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    color: var(--kivo-text-secondary);
+
+    font-size: 8px;
+
+}
+
+
+#checkboxRecordarme {
+
+    accent-color: var(--kivo-purple);
+
+}
+
+
+#linkOlvidePassword {
+
+    color: var(--kivo-purple);
+
+    font-size: 8px;
+
+    text-decoration: none;
+
+}
+
+
+#linkOlvidePassword:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* =========================================================
+   BOTÓN LOGIN
+========================================================= */
+
+#btnIniciarSesion {
+
+    height: 34px;
+
+    background-color: var(--kivo-purple);
+
+    border-color: var(--kivo-purple);
+
+    border-radius: 5px;
+
+    color: white;
+
+    font-size: 10px;
+
+    font-weight: 500;
+
+}
+
+
+#btnIniciarSesion:hover {
+
+    background-color: var(--kivo-purple-light);
+
+    border-color: var(--kivo-purple-light);
+
+}
+
+
+/* =========================================================
+   SEPARADOR
+========================================================= */
+
+#loginDivider {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin: 16px 0 10px;
+
+    color: var(--kivo-text-light);
+
+    font-size: 7px;
+
+}
+
+
+.divider-line {
+
+    flex: 1;
+
+    height: 1px;
+
+    background-color: var(--kivo-border);
+
+}
+
+
+/* =========================================================
+   REDES
+========================================================= */
+
+#loginSocialColumns {
+
+    margin: 0;
+
+}
+
+
+#loginSocialColumns .column {
+
+    padding-top: 0;
+
+    padding-bottom: 0;
+
+}
+
+
+.social-button {
+
+    width: 100%;
+
+    height: 30px;
+
+    background-color: var(--kivo-panel);
+
+    border: 1px solid var(--kivo-border);
+
+    border-radius: 5px;
+
+    color: var(--kivo-text);
+
+    font-size: 8px;
+
+}
+
+
+.social-button:hover {
+
+    background-color: var(--kivo-purple-soft);
+
+    border-color: var(--kivo-purple);
+
+}
+
+
+.social-icon {
+
+    margin-right: 6px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+.google-icon {
+
+    color: #4285F4;
+
+}
+
+
+.facebook-icon {
+
+    color: #1877F2;
+
+}
+
+
+/* =========================================================
+   IMAGEN PROMOCIONAL
+========================================================= */
+
+#loginPromoContainer {
+
+    position: relative;
+
+    height: 155px;
+
+    margin-top: 15px;
+
+    overflow: hidden;
+
+    border: 1px solid var(--kivo-border);
+
+    border-radius: 8px;
+
+    background-color: var(--kivo-purple-soft);
+
+}
+
+
+#loginPromoImage {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+#loginPromoOverlay {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 52%;
+
+    height: 100%;
+
+    padding: 25px 15px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255, 253, 250, 0.97),
+            rgba(255, 253, 250, 0.78),
+            transparent
+        );
+
+}
+
+
+#loginPromoTitle {
+
+    margin: 0 0 10px;
+
+    color: var(--kivo-text);
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+
+}
+
+
+#loginPromoHighlight {
+
+    color: var(--kivo-purple);
+
+}
+
+
+#loginPromoText {
+
+    width: 190px;
+
+    margin: 0;
+
+    color: var(--kivo-text-secondary);
+
+    font-size: 8px;
+
+    line-height: 1.5;
+
+}
+
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+#loginSuccessModal.is-active {
+
+    display: flex;
+
+}
+
+
+#loginSuccessCard {
+
+    width: 390px;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+}
+
+
+#loginSuccessHeader {
+
+    background-color: var(--kivo-purple-soft);
+
+}
+
+
+#loginSuccessTitle {
+
+    color: var(--kivo-text);
+
+    font-size: 18px;
+
+}
+
+
+#loginSuccessBody {
+
+    text-align: center;
+
+}
+
+
+#loginSuccessIcon {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 55px;
+
+    height: 55px;
+
+    margin: 0 auto 15px;
+
+    background-color: var(--kivo-purple);
+
+    border-radius: 50%;
+
+    color: white;
+
+    font-size: 25px;
+
+}
+
+
+#loginSuccessMessage {
+
+    color: var(--kivo-text-secondary);
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media screen and (max-width: 700px) {
+
+    #headerLogin {
+
+        padding: 12px 15px;
+
+    }
+
+
+    #questionRegistro {
+
+        display: none;
+
+    }
+
+
+    #mainLogin {
+
+        padding: 10px 15px 25px;
+
+    }
+
+
+    #loginBox {
+
+        padding: 22px 20px;
+
+    }
+
+
+    #logoLogin {
+
+        font-size: 28px;
+
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+    #textVolverLogin {
+
+        display: none;
+
+    }
+
+
+    #btnVolverInicioLogin {
+
+        width: 34px;
+
+        padding: 0;
+
+        justify-content: center;
+
+    }
+
+
+    #loginBox {
+
+        padding: 20px 15px;
+
+    }
+
+
+    #loginOptions {
+
+        align-items: flex-start;
+
+        gap: 10px;
+
+    }
+
+}

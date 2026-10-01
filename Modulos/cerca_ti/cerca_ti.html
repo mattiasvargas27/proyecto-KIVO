@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BULMA -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+
+    <!-- LEAFLET (mapa) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+
+    <!-- CSS PROPIO DEL MÓDULO -->
+    <link rel="stylesheet" href="cerca_ti.css">
+
+    <title>KIVO - Cerca de ti</title>
+</head>
+
+<body id="bodyKivo">
+
+    <!-- =====================================================
+         HEADER / NAVBAR
+    ====================================================== -->
+
+    <header id="headerKivo">
+
+        <nav class="navbar" id="navbarKivo">
+
+            <div class="navbar-brand" id="navbarBrand">
+
+                <a class="navbar-item" id="logoKivo" href="#">
+                    <strong id="logoTexto">KiVO</strong>
+                </a>
+
+                <a role="button" class="navbar-burger" id="navbarBurger"
+                   aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span id="burgerLinea1" aria-hidden="true"></span>
+                    <span id="burgerLinea2" aria-hidden="true"></span>
+                    <span id="burgerLinea3" aria-hidden="true"></span>
+                </a>
+
+            </div>
+
+            <div class="navbar-menu" id="navbarMenu">
+
+                <div class="navbar-start" id="navbarStart">
+                    <a class="navbar-item" id="navInicio" href="#">⌂ Inicio</a>
+                    <a class="navbar-item" id="navCatalogo" href="#">▦ Catálogo</a>
+                    <a class="navbar-item" id="navEmprendimientos" href="#">▣ Emprendimientos</a>
+                    <a class="navbar-item" id="navFavoritos" href="#">♡ Favoritos</a>
+                    <a class="navbar-item activo" id="navCerca" href="#">⚲ Cerca de ti</a>
+                    <a class="navbar-item" id="navSoporte" href="#">⚙ Soporte técnico</a>
+                </div>
+
+                <div class="navbar-end" id="navbarEnd">
+                    <div class="navbar-item" id="navbarLoginContainer">
+                        <a class="button is-small" id="btnIniciarSesion" href="#">Inicia sesión</a>
+                        <a class="button is-small" id="btnRegistrate" href="#">Regístrate</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main class="pagina">
+
+        <section class="modulo-encabezado">
+
+            <p>Cerca de ti</p>
+
+            <h1>Descubre emprendimientos <span>cerca de ti</span></h1>
+
+            <small>
+                Encuentra negocios locales a pocos minutos, mira qué tan lejos
+                están y cómo llegar.
+            </small>
+
+        </section>
+
+
+        <section class="cerca-wrap">
+
+            <!-- CONTENIDO (bloqueado hasta dar el permiso) -->
+            <div class="cerca-contenido bloqueado" id="cercaContenido" inert>
+
+                <div class="cerca-filtros">
+
+                    <div class="grupo-chips">
+                        <span>Distancia</span>
+                        <button class="chip chip-radio" type="button" data-radio="1">1 km</button>
+                        <button class="chip chip-radio" type="button" data-radio="3">3 km</button>
+                        <button class="chip chip-radio seleccionada" type="button" data-radio="5">5 km</button>
+                        <button class="chip chip-radio" type="button" data-radio="10">10 km</button>
+                    </div>
+
+                    <div class="grupo-chips">
+                        <span>Categoría</span>
+                        <button class="chip chip-categoria seleccionada" type="button" data-categoria="todos">Todas</button>
+                        <button class="chip chip-categoria" type="button" data-categoria="alimentos">🍴 Alimentos</button>
+                        <button class="chip chip-categoria" type="button" data-categoria="artesania">🧶 Artesanía</button>
+                        <button class="chip chip-categoria" type="button" data-categoria="belleza">✨ Belleza</button>
+                        <button class="chip chip-categoria" type="button" data-categoria="tecnologia">💻 Tecnología</button>
+                    </div>
+
+                    <div class="cerca-acciones">
+                        <button class="btn-kivo-borde" type="button" id="btnRecentrar">◎ Mi ubicación</button>
+                        <button class="btn-kivo-borde" type="button" id="btnDesactivar">Desactivar</button>
+                    </div>
+
+                </div>
+
+                <div class="cerca-layout">
+
+                    <aside class="cerca-lista-panel">
+                        <p class="cerca-resumen" id="resumenCerca"></p>
+                        <div id="listaCerca"></div>
+                        <p class="cerca-vacio" id="sinCerca" hidden>
+                            No hay emprendimientos con esos filtros.
+                            Prueba con una distancia mayor.
+                        </p>
+                    </aside>
+
+                    <div id="mapaCerca"></div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PERMISO DE UBICACIÓN -->
+            <div class="overlay-permiso" id="overlayPermiso">
+
+                <div class="permiso-card">
+
+                    <div class="permiso-icono">📍</div>
+
+                    <h2>¿Deseas que KIVO acceda a tu ubicación?</h2>
+
+                    <p>
+                        La usamos para mostrarte los emprendimientos que están
+                        más cerca y calcular las distancias.
+                    </p>
+
+                    <button class="btn-kivo" type="button" id="btnPermitirUbicacion">
+                        Permitir ubicación
+                    </button>
+
+                    <p id="mensajeUbicacion"></p>
+
+                    <p class="permiso-nota">
+                        Tu ubicación solo se usa en tu navegador para calcular distancias.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+    <script src="cerca_ti.js"></script>
+
+</body>
+
+</html>

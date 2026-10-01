@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <!-- BULMA -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    >
+
+    <!-- FUENTE INTER -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    
+    <link
+        rel="stylesheet"
+        href="registro.css"
+    >
+
+    <title>KIVO | Crear cuenta</title>
+
+</head>
+
+
+<body id="bodyRegistro">
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header
+        id="headerRegistro"
+        class="section"
+    >
+
+        <div
+            id="headerContainer"
+            class="container is-fluid"
+        >
+
+            <div
+                id="headerContent"
+                class="level"
+            >
+
+                <!-- LOGO -->
+
+                <div
+                    id="headerLeft"
+                    class="level-left"
+                >
+
+                    <div
+                        id="logoContainer"
+                        class="level-item"
+                    >
+
+                        <a
+                            href="../inicio.html"
+                            id="logoKivo"
+                            class="logo-link"
+                        >
+                            KiVO
+                        </a>
+
+                    </div>
+
+
+                    <!-- VOLVER AL INICIO -->
+
+                    <div
+                        id="backHomeContainer"
+                        class="level-item"
+                    >
+
+                        <a
+                            href="../inicio.html"
+                            id="btnVolverInicio"
+                            class="button"
+                        >
+
+                            <span
+                                id="backHomeIcon"
+                            >
+                                🏠
+                            </span>
+
+                            <span
+                                id="backHomeText"
+                            >
+                                Volver al inicio
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- LOGIN -->
+
+                <div
+                    id="headerRight"
+                    class="level-right"
+                >
+
+                    <div
+                        id="loginQuestionContainer"
+                        class="level-item"
+                    >
+
+                        <span
+                            id="loginQuestion"
+                        >
+                            ¿Ya tienes cuenta?
+                        </span>
+
+                    </div>
+
+
+                    <div
+                        id="headerLoginContainer"
+                        class="level-item"
+                    >
+
+                        <a
+                            href="../inicio_sesion/inicio_sesion.html"
+                            id="btnIrLoginHeader"
+                            class="button"
+                        >
+                            Inicia sesión
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         CONTENIDO PRINCIPAL
+    ====================================================== -->
+
+    <main
+        id="mainRegistro"
+        class="section"
+    >
+
+        <div
+            id="registroContainer"
+            class="container"
+        >
+
+            <!-- PANEL DE REGISTRO -->
+
+            <section
+                id="registroBox"
+                class="box"
+            >
+
+
+                <!-- =================================================
+                     ENCABEZADO
+                ================================================== -->
+
+                <div
+                    id="registroHeading"
+                    class="registro-heading"
+                >
+
+                    <div
+                        id="registroIcon"
+                        class="registro-icon"
+                    >
+                        👤+
+                    </div>
+
+
+                    <div
+                        id="registroHeadingText"
+                        class="registro-heading-text"
+                    >
+
+                        <h1
+                            id="registroTitulo"
+                            class="title"
+                        >
+                            Crea tu cuenta
+                        </h1>
+
+                        <p
+                            id="registroSubtitulo"
+                            class="subtitle"
+                        >
+                            Únete a KIVO y forma parte de nuestra comunidad.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     PASOS
+                ================================================== -->
+
+                <div
+                    id="stepsContainer"
+                    class="steps-container"
+                >
+
+                    <!-- PASO 1 -->
+
+                    <div
+                        id="step1"
+                        class="step active"
+                    >
+
+                        <span
+                            id="stepNumber1"
+                            class="step-number"
+                        >
+                            1
+                        </span>
+
+                        <span
+                            id="stepText1"
+                            class="step-text"
+                        >
+                            Datos básicos
+                        </span>
+
+                    </div>
+
+
+                    <span
+                        id="stepLine1"
+                        class="step-line"
+                    ></span>
+
+
+                    <!-- PASO 2 -->
+
+                    <div
+                        id="step2"
+                        class="step"
+                    >
+
+                        <span
+                            id="stepNumber2"
+                            class="step-number"
+                        >
+                            2
+                        </span>
+
+                        <span
+                            id="stepText2"
+                            class="step-text"
+                        >
+                            Tipo de cuenta
+                        </span>
+
+                    </div>
+
+
+                    <span
+                        id="stepLine2"
+                        class="step-line"
+                    ></span>
+
+
+                    <!-- PASO 3 -->
+
+                    <div
+                        id="step3"
+                        class="step"
+                    >
+
+                        <span
+                            id="stepNumber3"
+                            class="step-number"
+                        >
+                            3
+                        </span>
+
+                        <span
+                            id="stepText3"
+                            class="step-text"
+                        >
+                            ¡Listo!
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     FORMULARIO
+                ================================================== -->
+
+                <form
+                    id="registroForm"
+                    novalidate
+                >
+
+
+                    <!-- NOMBRE -->
+
+                    <div
+                        id="campoNombre"
+                        class="field"
+                    >
+
+                        <label
+                            id="labelNombre"
+                            class="label"
+                            for="inputNombre"
+                        >
+                            Nombre completo
+                        </label>
+
+                        <div
+                            id="controlNombre"
+                            class="control has-icons-left"
+                        >
+
+                            <input
+                                id="inputNombre"
+                                class="input"
+                                type="text"
+                                placeholder="Ingresa tu nombre completo"
+                            >
+
+                            <span
+                                id="iconNombre"
+                                class="icon is-small is-left"
+                            >
+                                👤
+                            </span>
+
+                        </div>
+
+                        <p
+                            id="errorNombre"
+                            class="help error-message"
+                        ></p>
+
+                    </div>
+
+
+
+                    <!-- CORREO -->
+
+                    <div
+                        id="campoCorreo"
+                        class="field"
+                    >
+
+                        <label
+                            id="labelCorreo"
+                            class="label"
+                            for="inputCorreo"
+                        >
+                            Correo electrónico
+                        </label>
+
+                        <div
+                            id="controlCorreo"
+                            class="control has-icons-left"
+                        >
+
+                            <input
+                                id="inputCorreo"
+                                class="input"
+                                type="email"
+                                placeholder="Ingresa tu correo electrónico"
+                            >
+
+                            <span
+                                id="iconCorreo"
+                                class="icon is-small is-left"
+                            >
+                                ✉
+                            </span>
+
+                        </div>
+
+                        <p
+                            id="errorCorreo"
+                            class="help error-message"
+                        ></p>
+
+                    </div>
+
+
+
+                    <!-- CONTRASEÑA -->
+
+                    <div
+                        id="campoPassword"
+                        class="field"
+                    >
+
+                        <label
+                            id="labelPassword"
+                            class="label"
+                            for="inputPassword"
+                        >
+                            Contraseña
+                        </label>
+
+                        <div
+                            id="controlPassword"
+                            class="control has-icons-left has-icons-right"
+                        >
+
+                            <input
+                                id="inputPassword"
+                                class="input"
+                                type="password"
+                                placeholder="Crea una contraseña"
+                            >
+
+                            <span
+                                id="iconPassword"
+                                class="icon is-small is-left"
+                            >
+                                🔒
+                            </span>
+
+                            <button
+                                id="btnMostrarPassword"
+                                class="password-toggle"
+                                type="button"
+                            >
+                                ◉
+                            </button>
+
+                        </div>
+
+                        <p
+                            id="errorPassword"
+                            class="help error-message"
+                        ></p>
+
+                    </div>
+
+
+
+                    <!-- CONFIRMAR CONTRASEÑA -->
+
+                    <div
+                        id="campoConfirmPassword"
+                        class="field"
+                    >
+
+                        <label
+                            id="labelConfirmPassword"
+                            class="label"
+                            for="inputConfirmPassword"
+                        >
+                            Confirmar contraseña
+                        </label>
+
+                        <div
+                            id="controlConfirmPassword"
+                            class="control has-icons-left has-icons-right"
+                        >
+
+                            <input
+                                id="inputConfirmPassword"
+                                class="input"
+                                type="password"
+                                placeholder="Confirma tu contraseña"
+                            >
+
+                            <span
+                                id="iconConfirmPassword"
+                                class="icon is-small is-left"
+                            >
+                                🔒
+                            </span>
+
+                            <button
+                                id="btnMostrarConfirmPassword"
+                                class="password-toggle"
+                                type="button"
+                            >
+                                ◉
+                            </button>
+
+                        </div>
+
+                        <p
+                            id="errorConfirmPassword"
+                            class="help error-message"
+                        ></p>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         TIPO DE CUENTA
+                    ================================================== -->
+
+                    <div
+                        id="campoTipoUsuario"
+                        class="field"
+                    >
+
+                        <label
+                            id="labelTipoUsuario"
+                            class="label"
+                        >
+                            ¿Cómo vas a usar KIVO?
+                        </label>
+
+
+                        <div
+                            id="tipoUsuarioColumns"
+                            class="columns is-variable is-2"
+                        >
+
+
+                            <!-- COMPRADOR -->
+
+                            <div
+                                id="compradorColumn"
+                                class="column"
+                            >
+
+                                <button
+                                    id="btnTipoComprador"
+                                    class="account-option"
+                                    type="button"
+                                >
+
+                                    <span
+                                        id="iconComprador"
+                                        class="account-icon"
+                                    >
+                                        🛍
+                                    </span>
+
+
+                                    <span
+                                        id="compradorInfo"
+                                        class="account-info"
+                                    >
+
+                                        <strong
+                                            id="compradorTitulo"
+                                        >
+                                            Comprador
+                                        </strong>
+
+                                        <small
+                                            id="compradorDescripcion"
+                                        >
+                                            Quiero descubrir y comprar
+                                            productos increíbles.
+                                        </small>
+
+                                    </span>
+
+
+                                    <span
+                                        id="radioComprador"
+                                        class="account-radio"
+                                    ></span>
+
+                                </button>
+
+                            </div>
+
+
+
+                            <!-- VENDEDOR -->
+
+                            <div
+                                id="vendedorColumn"
+                                class="column"
+                            >
+
+                                <button
+                                    id="btnTipoVendedor"
+                                    class="account-option"
+                                    type="button"
+                                >
+
+                                    <span
+                                        id="iconVendedor"
+                                        class="account-icon"
+                                    >
+                                        🏪
+                                    </span>
+
+
+                                    <span
+                                        id="vendedorInfo"
+                                        class="account-info"
+                                    >
+
+                                        <strong
+                                            id="vendedorTitulo"
+                                        >
+                                            Vendedor
+                                        </strong>
+
+                                        <small
+                                            id="vendedorDescripcion"
+                                        >
+                                            Quiero publicar mis productos
+                                            y hacer crecer mi negocio.
+                                        </small>
+
+                                    </span>
+
+
+                                    <span
+                                        id="radioVendedor"
+                                        class="account-radio"
+                                    ></span>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        <p
+                            id="errorTipoUsuario"
+                            class="help error-message"
+                        ></p>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         TÉRMINOS
+                    ================================================== -->
+
+                    <div
+                        id="campoTerminos"
+                        class="field"
+                    >
+
+                        <label
+                            id="labelTerminos"
+                            class="checkbox terms-checkbox"
+                        >
+
+                            <input
+                                id="checkboxTerminos"
+                                type="checkbox"
+                            >
+
+                            <span
+                                id="textoTerminos"
+                            >
+                                Acepto los
+                                <a
+                                    href="#"
+                                    id="linkTerminos"
+                                >
+                                    Términos y Condiciones
+                                </a>
+                                y la
+                                <a
+                                    href="#"
+                                    id="linkPrivacidad"
+                                >
+                                    Política de Privacidad
+                                </a>
+                            </span>
+
+                        </label>
+
+                        <p
+                            id="errorTerminos"
+                            class="help error-message"
+                        ></p>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         BOTÓN CREAR CUENTA
+                    ================================================== -->
+
+                    <div
+                        id="campoCrearCuenta"
+                        class="field"
+                    >
+
+                        <div
+                            id="controlCrearCuenta"
+                            class="control"
+                        >
+
+                            <button
+                                id="btnCrearCuenta"
+                                class="button is-fullwidth"
+                                type="submit"
+                            >
+                                Crear cuenta
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         SEPARADOR
+                    ================================================== -->
+
+                    <div
+                        id="socialDivider"
+                        class="social-divider"
+                    >
+
+                        <span
+                            id="dividerLineLeft"
+                            class="divider-line"
+                        ></span>
+
+                        <span
+                            id="dividerText"
+                        >
+                            o regístrate con
+                        </span>
+
+                        <span
+                            id="dividerLineRight"
+                            class="divider-line"
+                        ></span>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         GOOGLE / FACEBOOK
+                    ================================================== -->
+
+                    <div
+                        id="socialColumns"
+                        class="columns is-variable is-2"
+                    >
+
+                        <div
+                            id="googleColumn"
+                            class="column"
+                        >
+
+                            <button
+                                id="btnGoogle"
+                                class="button social-button"
+                                type="button"
+                            >
+
+                                <span
+                                    id="googleIcon"
+                                    class="social-icon"
+                                >
+                                    G
+                                </span>
+
+                                <span
+                                    id="googleText"
+                                >
+                                    Google
+                                </span>
+
+                            </button>
+
+                        </div>
+
+
+                        <div
+                            id="facebookColumn"
+                            class="column"
+                        >
+
+                            <button
+                                id="btnFacebook"
+                                class="button social-button"
+                                type="button"
+                            >
+
+                                <span
+                                    id="facebookIcon"
+                                    class="social-icon"
+                                >
+                                    f
+                                </span>
+
+                                <span
+                                    id="facebookText"
+                                >
+                                    Facebook
+                                </span>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         MODAL DE REGISTRO EXITOSO
+    ====================================================== -->
+
+    <div
+        id="registroSuccessModal"
+        class="modal"
+    >
+
+        <div
+            id="modalBackground"
+            class="modal-background"
+        ></div>
+
+
+        <div
+            id="successModalCard"
+            class="modal-card"
+        >
+
+            <header
+                id="successModalHeader"
+                class="modal-card-head"
+            >
+
+                <p
+                    id="successModalTitle"
+                    class="modal-card-title"
+                >
+                    ¡Cuenta creada!
+                </p>
+
+            </header>
+
+
+            <section
+                id="successModalBody"
+                class="modal-card-body"
+            >
+
+                <div
+                    id="successIcon"
+                    class="success-icon"
+                >
+                    ✓
+                </div>
+
+                <p
+                    id="successMessage"
+                >
+                    Tu cuenta fue creada correctamente.
+                    Bienvenido a KIVO.
+                </p>
+
+            </section>
+
+
+            <footer
+                id="successModalFooter"
+                class="modal-card-foot"
+            >
+
+                <button
+                    id="btnIrInicio"
+                    class="button is-fullwidth"
+                    type="button"
+                >
+                    Ir al inicio
+                </button>
+
+            </footer>
+
+        </div>
+
+    </div>
+
+
+    <!-- SeewtAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- JAVASCRIPT -->
+    <script src="registro.js"></script>
+    
+
+</body>
+
+</html>

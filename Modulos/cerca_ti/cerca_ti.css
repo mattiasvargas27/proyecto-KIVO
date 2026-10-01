@@ -1,0 +1,585 @@
+/* =========================================================
+   KIVO - ESTILOS DEL MÓDULO CERCA DE TI
+   Navbar y colores iguales a los demás módulos
+========================================================= */
+
+:root {
+    --kivo-bg: #F8F5EF;
+    --kivo-white: #FFFDFC;
+
+    --kivo-purple: #5B3FB5;
+    --kivo-purple-light: #7254C6;
+    --kivo-purple-soft: #EEE9F7;
+
+    --kivo-text: #202020;
+    --kivo-text-secondary: #666666;
+    --kivo-text-light: #888888;
+
+    --kivo-border: #DED9D2;
+    --kivo-border-light: #EAE6DF;
+
+    --kivo-shadow: 0 4px 18px rgba(55, 40, 80, 0.07);
+    --kivo-radius: 12px;
+}
+
+
+/* ================= BODY ================= */
+
+#bodyKivo {
+    margin: 0;
+    padding: 0;
+    background-color: var(--kivo-bg);
+    color: var(--kivo-text);
+    font-family: "Inter", Arial, sans-serif;
+    min-height: 100vh;
+}
+
+
+/* ================= NAVBAR ================= */
+
+#headerKivo {
+    width: 100%;
+    background-color: var(--kivo-bg);
+    border-bottom: 1px solid var(--kivo-border-light);
+}
+
+#navbarKivo {
+    min-height: 70px;
+    padding: 0 42px;
+    background-color: var(--kivo-bg);
+}
+
+#logoKivo {
+    padding-left: 0;
+    padding-right: 30px;
+    background: transparent !important;
+    color: var(--kivo-purple) !important;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+#logoTexto {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: var(--kivo-purple);
+}
+
+#navbarMenu {
+    background-color: transparent;
+}
+
+#navbarStart {
+    align-items: center;
+}
+
+#navbarStart .navbar-item {
+    background: transparent;
+    color: var(--kivo-text-secondary);
+    font-size: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 0.2s ease;
+}
+
+#navbarStart .navbar-item:hover {
+    color: var(--kivo-purple);
+    background-color: var(--kivo-purple-soft);
+}
+
+#navbarStart .navbar-item.activo {
+    color: var(--kivo-purple) !important;
+    font-weight: 600;
+}
+
+#navbarLoginContainer {
+    gap: 8px;
+    background: transparent;
+}
+
+#btnIniciarSesion {
+    height: 38px;
+    padding: 0 18px;
+    background-color: transparent;
+    border: 1px solid var(--kivo-purple);
+    border-radius: 8px;
+    color: var(--kivo-purple);
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+#btnIniciarSesion:hover {
+    background-color: var(--kivo-purple-soft);
+    color: var(--kivo-purple);
+}
+
+#btnRegistrate {
+    height: 38px;
+    padding: 0 18px;
+    background-color: var(--kivo-purple);
+    border: 1px solid var(--kivo-purple);
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+#btnRegistrate:hover {
+    background-color: var(--kivo-purple-light);
+    border-color: var(--kivo-purple-light);
+    color: white;
+}
+
+#navbarBurger span {
+    background-color: var(--kivo-purple);
+}
+
+
+/* ================= PÁGINA ================= */
+
+.pagina {
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.modulo-encabezado {
+    padding: 38px 0 22px;
+}
+
+.modulo-encabezado p {
+    margin-bottom: 5px;
+    color: var(--kivo-text-light);
+    font-size: 14px;
+}
+
+.modulo-encabezado h1 {
+    margin-bottom: 12px;
+    font-size: 38px;
+    line-height: 1.12;
+    font-weight: 600;
+}
+
+.modulo-encabezado h1 span {
+    color: var(--kivo-purple);
+}
+
+.modulo-encabezado small {
+    display: block;
+    max-width: 550px;
+    color: var(--kivo-text-secondary);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* ================= BOTONES ================= */
+
+.btn-kivo,
+.btn-kivo-borde {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    padding: 0 16px;
+    border: 1px solid var(--kivo-purple);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-kivo {
+    background-color: var(--kivo-purple);
+    color: white;
+}
+
+.btn-kivo:hover {
+    background-color: var(--kivo-purple-light);
+    border-color: var(--kivo-purple-light);
+    color: white;
+}
+
+.btn-kivo-borde {
+    background-color: transparent;
+    color: var(--kivo-purple);
+}
+
+.btn-kivo-borde:hover {
+    background-color: var(--kivo-purple);
+    color: white;
+}
+
+.etiqueta-kivo {
+    display: inline-flex;
+    align-items: center;
+    height: 22px;
+    padding: 0 8px;
+    background-color: var(--kivo-purple-soft);
+    border-radius: 6px;
+    color: var(--kivo-purple);
+    font-size: 10px;
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   CERCA DE TI
+========================================================= */
+
+.cerca-wrap {
+    position: relative;
+    min-height: 620px;
+}
+
+
+/* ================= BLOQUEO ================= */
+
+.cerca-contenido {
+    transition: filter 0.3s ease;
+}
+
+.cerca-contenido.bloqueado {
+    filter: blur(5px);
+    pointer-events: none;
+    user-select: none;
+}
+
+.overlay-permiso {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(248, 245, 239, 0.55);
+    border-radius: 18px;
+}
+
+.overlay-permiso[hidden] {
+    display: none;
+}
+
+.permiso-card {
+    max-width: 420px;
+    padding: 28px;
+    background-color: var(--kivo-white);
+    border: 1px solid var(--kivo-border-light);
+    border-radius: 18px;
+    box-shadow: var(--kivo-shadow);
+    text-align: center;
+}
+
+.permiso-icono {
+    display: grid;
+    place-items: center;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 14px;
+    background-color: var(--kivo-purple-soft);
+    border-radius: 50%;
+    font-size: 28px;
+}
+
+.permiso-card h2 {
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.permiso-card p {
+    margin-bottom: 18px;
+    color: var(--kivo-text-secondary);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+#btnPermitirUbicacion {
+    height: 42px;
+    padding: 0 26px;
+    font-size: 13px;
+}
+
+#btnPermitirUbicacion:disabled {
+    opacity: 0.7;
+    cursor: wait;
+}
+
+#mensajeUbicacion {
+    margin: 14px 0 0;
+    font-size: 12px;
+}
+
+#mensajeUbicacion.es-error {
+    color: #B3261E;
+}
+
+.permiso-card .permiso-nota {
+    margin: 14px 0 0;
+    color: var(--kivo-text-light);
+    font-size: 11px;
+}
+
+
+/* ================= FILTROS ================= */
+
+.cerca-filtros {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px 28px;
+    margin-bottom: 16px;
+}
+
+.grupo-chips {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+}
+
+.grupo-chips > span {
+    margin-right: 4px;
+    color: var(--kivo-text-light);
+    font-size: 12px;
+}
+
+.chip {
+    height: 30px;
+    padding: 0 13px;
+    background-color: var(--kivo-white);
+    border: 1px solid var(--kivo-border);
+    border-radius: 18px;
+    color: var(--kivo-text-secondary);
+    font-family: inherit;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.chip:hover {
+    border-color: var(--kivo-purple);
+    color: var(--kivo-purple);
+    background-color: var(--kivo-purple-soft);
+}
+
+.chip.seleccionada {
+    background-color: var(--kivo-purple);
+    border-color: var(--kivo-purple);
+    color: white;
+}
+
+.cerca-acciones {
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+}
+
+
+/* ================= LISTA + MAPA ================= */
+
+.cerca-layout {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 16px;
+    height: 560px;
+}
+
+.cerca-lista-panel {
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+.cerca-resumen {
+    margin-bottom: 10px;
+    color: var(--kivo-text-secondary);
+    font-size: 12px;
+}
+
+.cerca-vacio {
+    padding: 30px 10px;
+    color: var(--kivo-text-secondary);
+    font-size: 12px;
+    text-align: center;
+}
+
+.cerca-vacio[hidden] {
+    display: none;
+}
+
+#mapaCerca {
+    height: 100%;
+    min-height: 380px;
+    border: 1px solid var(--kivo-border);
+    border-radius: 15px;
+    isolation: isolate;
+}
+
+
+/* ================= TARJETAS ================= */
+
+.cerca-card {
+    margin-bottom: 10px;
+    padding: 14px;
+    background-color: var(--kivo-white);
+    border: 1px solid var(--kivo-border-light);
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.cerca-card:hover,
+.cerca-card.resaltada {
+    border-color: var(--kivo-purple);
+    box-shadow: var(--kivo-shadow);
+}
+
+.cerca-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.cerca-distancia {
+    color: var(--kivo-purple);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.cerca-card h3 {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cerca-card p {
+    margin-bottom: 10px;
+    color: var(--kivo-text-secondary);
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.cerca-card-acciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cerca-card-acciones .btn-kivo-borde {
+    height: 30px;
+    font-size: 11px;
+}
+
+.cerca-fav {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background-color: #F3F0FA;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    color: var(--kivo-purple);
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.cerca-fav:hover {
+    border-color: var(--kivo-purple);
+}
+
+.cerca-fav.favoritoActivo {
+    background-color: #E4DBF7;
+    border-color: var(--kivo-purple);
+}
+
+
+/* ================= MARCADORES ================= */
+
+.pin-kivo {
+    background-color: var(--kivo-purple);
+    border: 3px solid white;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.pin-usuario {
+    background-color: #2F80ED;
+    border: 3px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 7px rgba(47, 128, 237, 0.25);
+}
+
+.leaflet-popup-content {
+    font-family: "Inter", Arial, sans-serif;
+}
+
+.popup-kivo strong {
+    display: block;
+    font-size: 13px;
+}
+
+.popup-kivo span {
+    display: block;
+    margin: 3px 0 6px;
+    color: var(--kivo-text-secondary);
+    font-size: 11px;
+}
+
+.popup-kivo a {
+    color: var(--kivo-purple);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media screen and (max-width: 1023px) {
+
+    #navbarKivo {
+        padding: 0 25px;
+    }
+
+    #navbarMenu {
+        background-color: var(--kivo-white);
+        box-shadow: var(--kivo-shadow);
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .cerca-layout {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    #mapaCerca {
+        order: -1;
+        height: 380px;
+    }
+
+    .cerca-lista-panel {
+        max-height: 420px;
+    }
+
+    .cerca-acciones {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #navbarKivo {
+        padding: 0 18px;
+    }
+
+    .modulo-encabezado h1 {
+        font-size: 29px;
+    }
+}

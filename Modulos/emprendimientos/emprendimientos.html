@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BULMA -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    >
+
+    <!-- CSS PROPIO -->
+    <link rel="stylesheet" href="emprendimientos.css">
+
+    <title>KIVO - Emprendimientos</title>
+</head>
+
+<body id="bodyKivo">
+
+    <!-- =====================================================
+         HEADER / NAVBAR
+    ====================================================== -->
+
+    <header id="headerKivo">
+
+        <nav class="navbar" id="navbarKivo">
+
+            <div class="navbar-brand" id="navbarBrand">
+
+                <a class="navbar-item" id="logoKivo" href="#">
+                    <strong id="logoTexto">KiVO</strong>
+                </a>
+
+                <a
+                    role="button"
+                    class="navbar-burger"
+                    id="navbarBurger"
+                    aria-label="menu"
+                    aria-expanded="false"
+                    data-target="navbarMenu"
+                >
+                    <span id="burgerLinea1" aria-hidden="true"></span>
+                    <span id="burgerLinea2" aria-hidden="true"></span>
+                    <span id="burgerLinea3" aria-hidden="true"></span>
+                </a>
+
+            </div>
+
+            <div class="navbar-menu" id="navbarMenu">
+
+                <div class="navbar-start" id="navbarStart">
+
+                    <a class="navbar-item" id="navInicio" href="#">⌂ Inicio</a>
+                    <a class="navbar-item" id="navCatalogo" href="#">▦ Catálogo</a>
+                    <a class="navbar-item" id="navEmprendimientos" href="#">▣ Emprendimientos</a>
+                    <a class="navbar-item" id="navFavoritos" href="#">♡ Favoritos</a>
+                    <a class="navbar-item" id="navCerca" href="#">⚲ Cerca de ti</a>
+                    <a class="navbar-item" id="navSoporte" href="#">⚙ Soporte técnico</a>
+
+                </div>
+
+                <div class="navbar-end" id="navbarEnd">
+
+                    <div class="navbar-item" id="navbarLoginContainer">
+
+                        <a class="button is-small" id="btnIniciarSesion" href="#">
+                            Inicia sesión
+                        </a>
+
+                        <a class="button is-small" id="btnRegistrate" href="#">
+                            Regístrate
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>  
+
+
+    <main>
+
+        
+
+        <section class="encabezado">
+
+            <div class="titulo">
+
+                <h1>
+                    Catálogo de<br>
+                    <span>Emprendimientos</span>
+                </h1>
+
+                <p>
+                    Apoya tu local y mejora tus ventas
+                </p>
+
+            </div>
+
+
+            <div class="imagen-presentacion">
+
+               
+
+                <img
+                    src="https://placehold.co/500x220/EEE9F7/5B3FB5?text=Imagen+KIVO"
+                    alt="Imagen de KIVO">
+
+            </div>
+
+
+            <div class="buscador">
+
+                <input
+                    type="text"
+                    id="buscar"
+                    placeholder="Buscar emprendimiento">
+
+                <button onclick="buscarEmprendimiento()">
+                    ⌕
+                </button>
+
+            </div>
+
+        </section>
+
+
+      
+
+        <section class="categorias">
+
+            <button class="categoria seleccionada" data-categoria="todos">
+                ▦ Todos
+            </button>
+
+            <button class="categoria" data-categoria="alimentos">
+                ▣ Alimentos
+            </button>
+
+            <button class="categoria" data-categoria="artesania">
+                ♧ Artesanía
+            </button>
+
+            <button class="categoria" data-categoria="ropa">
+                ♜ Ropa
+            </button>
+
+            <button class="categoria" data-categoria="hogar">
+                ⌂ Hogar
+            </button>
+
+            <button class="categoria" data-categoria="tecnologia">
+                ♨ Tecnología
+            </button>
+
+            <button class="categoria" data-categoria="belleza">
+                ♙ Belleza
+            </button>
+
+        </section>
+
+
+        
+
+        <section class="resultado">
+
+            <p class="titulo-resultados">
+                Emprendimientos encontrados
+            </p>
+
+
+            <div class="tarjetas" id="tarjetas">
+
+
+                
+
+                <article
+                    class="tarjeta"
+                    data-categoria="alimentos"
+                    data-nombre="Sabor de Casa">
+
+                    <div class="foto">
+
+                        
+
+                        <img
+                            src="https://placehold.co/600x400/FFFDFC/5B3FB5?text=Imagen+1"
+                            alt="Sabor de Casa">
+
+                    </div>
+
+                    <div class="informacion">
+
+                        <span class="etiqueta">
+                            Alimentos
+                        </span>
+
+                        <h2>
+                            Sabor de Casa
+                        </h2>
+
+                        <p>
+                            Comida casera preparada con ingredientes frescos.
+                        </p>
+
+                        <button class="ver-mas">
+                            Ver emprendimiento
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                
+
+                <article
+                    class="tarjeta"
+                    data-categoria="artesania"
+                    data-nombre="Manos Creativas">
+
+                    <div class="foto">
+
+                        <img
+                            src="https://placehold.co/600x400/FFFDFC/5B3FB5?text=Imagen+2"
+                            alt="Manos Creativas">
+
+                    </div>
+
+                    <div class="informacion">
+
+                        <span class="etiqueta">
+                            Artesanía
+                        </span>
+
+                        <h2>
+                            Manos Creativas
+                        </h2>
+
+                        <p>
+                            Productos hechos a mano con diseños únicos.
+                        </p>
+
+                        <button class="ver-mas">
+                            Ver emprendimiento
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                
+
+                <article
+                    class="tarjeta"
+                    data-categoria="ropa"
+                    data-nombre="Tu Estilo">
+
+                    <div class="foto">
+
+                        <img
+                            src="https://placehold.co/600x400/FFFDFC/5B3FB5?text=Imagen+3"
+                            alt="Tu Estilo">
+
+                    </div>
+
+                    <div class="informacion">
+
+                        <span class="etiqueta">
+                            Ropa
+                        </span>
+
+                        <h2>
+                            Tu Estilo
+                        </h2>
+
+                        <p>
+                            Ropa y accesorios para diferentes estilos.
+                        </p>
+
+                        <button class="ver-mas">
+                            Ver emprendimiento
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                
+
+                <article
+                    class="tarjeta"
+                    data-categoria="hogar"
+                    data-nombre="Detalles del Hogar">
+
+                    <div class="foto">
+
+                        <img
+                            src="https://placehold.co/600x400/FFFDFC/5B3FB5?text=Imagen+4"
+                            alt="Detalles del Hogar">
+
+                    </div>
+
+                    <div class="informacion">
+
+                        <span class="etiqueta">
+                            Hogar
+                        </span>
+
+                        <h2>
+                            Detalles del Hogar
+                        </h2>
+
+                        <p>
+                            Ideas y productos para darle vida a tu hogar.
+                        </p>
+
+                        <button class="ver-mas">
+                            Ver emprendimiento
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <p id="sin-resultados" class="sin-resultados">
+                No encontramos emprendimientos con esa búsqueda.
+            </p>
+
+        </section>
+
+
+        
+
+        <section class="registro" >
+
+            <div class="icono-casa">
+                ⌂
+            </div>
+
+            <div>
+
+                <h2>
+                    ¿Tienes un emprendimiento?
+                </h2>
+
+                <p>
+                    Únete a KIVO y lleva tu negocio al siguiente nivel
+                </p>
+
+            </div>
+
+            <button id="button_registro">
+                Registrar mi emprendimiento
+            </button>
+
+        </section>
+
+    </main>
+
+
+    
+
+    <script src="emprendimientos.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,431 @@
+/* =========================================================
+   KIVO - ESTILOS DEL MÓDULO FAVORITOS
+   Navbar y colores iguales a los demás módulos
+========================================================= */
+
+:root {
+    --kivo-bg: #F8F5EF;
+    --kivo-white: #FFFDFC;
+
+    --kivo-purple: #5B3FB5;
+    --kivo-purple-light: #7254C6;
+    --kivo-purple-soft: #EEE9F7;
+
+    --kivo-text: #202020;
+    --kivo-text-secondary: #666666;
+    --kivo-text-light: #888888;
+
+    --kivo-border: #DED9D2;
+    --kivo-border-light: #EAE6DF;
+
+    --kivo-shadow: 0 4px 18px rgba(55, 40, 80, 0.07);
+    --kivo-radius: 12px;
+}
+
+
+/* ================= BODY ================= */
+
+#bodyKivo {
+    margin: 0;
+    padding: 0;
+    background-color: var(--kivo-bg);
+    color: var(--kivo-text);
+    font-family: "Inter", Arial, sans-serif;
+    min-height: 100vh;
+}
+
+
+/* ================= NAVBAR ================= */
+
+#headerKivo {
+    width: 100%;
+    background-color: var(--kivo-bg);
+    border-bottom: 1px solid var(--kivo-border-light);
+}
+
+#navbarKivo {
+    min-height: 70px;
+    padding: 0 42px;
+    background-color: var(--kivo-bg);
+}
+
+#logoKivo {
+    padding-left: 0;
+    padding-right: 30px;
+    background: transparent !important;
+    color: var(--kivo-purple) !important;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+#logoTexto {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: var(--kivo-purple);
+}
+
+#navbarMenu {
+    background-color: transparent;
+}
+
+#navbarStart {
+    align-items: center;
+}
+
+#navbarStart .navbar-item {
+    background: transparent;
+    color: var(--kivo-text-secondary);
+    font-size: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 0.2s ease;
+}
+
+#navbarStart .navbar-item:hover {
+    color: var(--kivo-purple);
+    background-color: var(--kivo-purple-soft);
+}
+
+#navbarStart .navbar-item.activo {
+    color: var(--kivo-purple) !important;
+    font-weight: 600;
+}
+
+#navbarLoginContainer {
+    gap: 8px;
+    background: transparent;
+}
+
+#btnIniciarSesion {
+    height: 38px;
+    padding: 0 18px;
+    background-color: transparent;
+    border: 1px solid var(--kivo-purple);
+    border-radius: 8px;
+    color: var(--kivo-purple);
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+#btnIniciarSesion:hover {
+    background-color: var(--kivo-purple-soft);
+    color: var(--kivo-purple);
+}
+
+#btnRegistrate {
+    height: 38px;
+    padding: 0 18px;
+    background-color: var(--kivo-purple);
+    border: 1px solid var(--kivo-purple);
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+#btnRegistrate:hover {
+    background-color: var(--kivo-purple-light);
+    border-color: var(--kivo-purple-light);
+    color: white;
+}
+
+#navbarBurger span {
+    background-color: var(--kivo-purple);
+}
+
+
+/* ================= PÁGINA ================= */
+
+.pagina {
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.modulo-encabezado {
+    padding: 38px 0 22px;
+}
+
+.modulo-encabezado p {
+    margin-bottom: 5px;
+    color: var(--kivo-text-light);
+    font-size: 14px;
+}
+
+.modulo-encabezado h1 {
+    margin-bottom: 12px;
+    font-size: 38px;
+    line-height: 1.12;
+    font-weight: 600;
+}
+
+.modulo-encabezado h1 span {
+    color: var(--kivo-purple);
+}
+
+.modulo-encabezado small {
+    display: block;
+    max-width: 550px;
+    color: var(--kivo-text-secondary);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* ================= BOTONES ================= */
+
+.btn-kivo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    padding: 0 16px;
+    background-color: var(--kivo-purple);
+    border: 1px solid var(--kivo-purple);
+    border-radius: 8px;
+    color: white;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-kivo:hover {
+    background-color: var(--kivo-purple-light);
+    border-color: var(--kivo-purple-light);
+    color: white;
+}
+
+.etiqueta-kivo {
+    display: inline-flex;
+    align-items: center;
+    height: 22px;
+    padding: 0 8px;
+    background-color: var(--kivo-purple-soft);
+    border-radius: 6px;
+    color: var(--kivo-purple);
+    font-size: 10px;
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   BLOQUES DE FAVORITOS
+========================================================= */
+
+.bloque-favoritos {
+    margin-bottom: 40px;
+}
+
+.bloque-favoritos + .bloque-favoritos {
+    padding-top: 30px;
+    border-top: 1px solid var(--kivo-border-light);
+}
+
+.bloque-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 15px;
+}
+
+.bloque-titulo h2 {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.bloque-titulo p {
+    margin-top: 4px;
+    color: var(--kivo-text-secondary);
+    font-size: 11px;
+}
+
+.bloque-titulo a {
+    color: var(--kivo-purple);
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.bloque-titulo a:hover {
+    text-decoration: underline;
+}
+
+
+/* ================= GRID Y TARJETAS ================= */
+
+.fav-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 16px;
+}
+
+.fav-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: var(--kivo-white);
+    border: 1px solid var(--kivo-border-light);
+    border-radius: 14px;
+    box-shadow: var(--kivo-shadow);
+    transition: all 0.25s ease;
+}
+
+.fav-card:hover {
+    transform: translateY(-3px);
+    border-color: #CFC7DA;
+}
+
+.fav-imagen {
+    position: relative;
+    display: grid;
+    place-items: center;
+    height: 160px;
+    overflow: hidden;
+    background-color: var(--kivo-purple-soft);
+    font-size: 40px;
+}
+
+.fav-imagen img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fav-imagen .etiqueta-kivo {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 1;
+    background-color: var(--kivo-white);
+}
+
+.fav-quitar {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background-color: rgba(255, 253, 252, 0.95);
+    border: 1px solid var(--kivo-purple);
+    border-radius: 50%;
+    color: var(--kivo-purple);
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.fav-quitar:hover {
+    background-color: var(--kivo-purple);
+    color: white;
+}
+
+.fav-info {
+    padding: 14px;
+}
+
+.fav-info h3 {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.fav-vendedor {
+    margin-bottom: 8px;
+    color: var(--kivo-text-light);
+    font-size: 11px;
+}
+
+.fav-precio {
+    color: var(--kivo-purple);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.fav-categoria {
+    margin-bottom: 7px;
+    color: var(--kivo-purple);
+    font-size: 11px;
+}
+
+.fav-descripcion {
+    color: var(--kivo-text-secondary);
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+
+/* ================= ESTADO VACÍO ================= */
+
+.vacio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 36px 20px;
+    background-color: var(--kivo-white);
+    border: 1px dashed var(--kivo-border);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.vacio[hidden] {
+    display: none;
+}
+
+.vacio-icono {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: var(--kivo-purple-soft);
+    border-radius: 50%;
+    color: var(--kivo-purple);
+    font-size: 22px;
+}
+
+.vacio strong {
+    font-size: 14px;
+}
+
+.vacio p {
+    max-width: 380px;
+    margin-bottom: 6px;
+    color: var(--kivo-text-secondary);
+    font-size: 12px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media screen and (max-width: 1023px) {
+
+    #navbarKivo {
+        padding: 0 25px;
+    }
+
+    #navbarMenu {
+        background-color: var(--kivo-white);
+        box-shadow: var(--kivo-shadow);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #navbarKivo {
+        padding: 0 18px;
+    }
+
+    .modulo-encabezado h1 {
+        font-size: 29px;
+    }
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BULMA -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+
+    <!-- CSS PROPIO DEL MÓDULO -->
+    <link rel="stylesheet" href="favoritos.css">
+
+    <title>KIVO - Favoritos</title>
+</head>
+
+<body id="bodyKivo">
+
+    <!-- =====================================================
+         HEADER / NAVBAR
+    ====================================================== -->
+
+    <header id="headerKivo">
+
+        <nav class="navbar" id="navbarKivo">
+
+            <div class="navbar-brand" id="navbarBrand">
+
+                <a class="navbar-item" id="logoKivo" href="#">
+                    <strong id="logoTexto">KiVO</strong>
+                </a>
+
+                <a role="button" class="navbar-burger" id="navbarBurger"
+                   aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span id="burgerLinea1" aria-hidden="true"></span>
+                    <span id="burgerLinea2" aria-hidden="true"></span>
+                    <span id="burgerLinea3" aria-hidden="true"></span>
+                </a>
+
+            </div>
+
+            <div class="navbar-menu" id="navbarMenu">
+
+                <div class="navbar-start" id="navbarStart">
+                    <a class="navbar-item" id="navInicio" href="#">⌂ Inicio</a>
+                    <a class="navbar-item" id="navCatalogo" href="#">▦ Catálogo</a>
+                    <a class="navbar-item" id="navEmprendimientos" href="#">▣ Emprendimientos</a>
+                    <a class="navbar-item activo" id="navFavoritos" href="#">♡ Favoritos</a>
+                    <a class="navbar-item" id="navCerca" href="#">⚲ Cerca de ti</a>
+                    <a class="navbar-item" id="navSoporte" href="#">⚙ Soporte técnico</a>
+                </div>
+
+                <div class="navbar-end" id="navbarEnd">
+                    <div class="navbar-item" id="navbarLoginContainer">
+                        <a class="button is-small" id="btnIniciarSesion" href="#">Inicia sesión</a>
+                        <a class="button is-small" id="btnRegistrate" href="#">Regístrate</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main class="pagina">
+
+        <section class="modulo-encabezado">
+
+            <p>Favoritos</p>
+
+            <h1>Tus <span>favoritos</span> en un solo lugar</h1>
+
+            <small>
+                Aquí están los productos y emprendimientos que guardaste
+                para encontrarlos fácil cuando quieras.
+            </small>
+
+        </section>
+
+
+        <!-- PRODUCTOS FAVORITOS (arriba) -->
+        <section class="bloque-favoritos" id="seccionProductos">
+
+            <div class="bloque-titulo">
+
+                <div>
+                    <h2>♡ Productos favoritos</h2>
+                    <p id="contadorProductos">0 productos guardados</p>
+                </div>
+
+                <a id="linkIrCatalogo" href="#">Ir al catálogo →</a>
+
+            </div>
+
+            <div class="fav-grid" id="gridProductos"></div>
+
+            <div class="vacio" id="vacioProductos">
+                <span class="vacio-icono">♡</span>
+                <strong>Aún no tienes productos favoritos</strong>
+                <p>Toca el corazón de un producto en Inicio para guardarlo aquí.</p>
+                <a class="btn-kivo" id="btnExplorarProductos" href="#">Explorar productos</a>
+            </div>
+
+        </section>
+
+
+        <!-- EMPRENDIMIENTOS FAVORITOS (abajo) -->
+        <section class="bloque-favoritos" id="seccionEmprendimientos">
+
+            <div class="bloque-titulo">
+
+                <div>
+                    <h2>▣ Emprendimientos favoritos</h2>
+                    <p id="contadorEmprendimientos">0 emprendimientos guardados</p>
+                </div>
+
+                <a id="linkVerCerca" href="#">Ver cerca de ti →</a>
+
+            </div>
+
+            <div class="fav-grid" id="gridEmprendimientos"></div>
+
+            <div class="vacio" id="vacioEmprendimientos">
+                <span class="vacio-icono">▣</span>
+                <strong>Aún no tienes emprendimientos favoritos</strong>
+                <p>Guarda los emprendimientos que te gusten desde Inicio o desde Cerca de ti.</p>
+                <a class="btn-kivo" id="btnVerEmprendimientos" href="#">Ver emprendimientos</a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="favoritos.js"></script>
+
+</body>
+
+</html>

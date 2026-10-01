@@ -1,0 +1,174 @@
+:root {
+  --kivo-bg: #F8F5EF;
+  --kivo-card-bg: #FFFDFC;
+  --kivo-primary: #5B3FB5;
+  --kivo-secondary: #7254C6;
+  --kivo-purple-soft-1: #EEE7FC;
+  --kivo-purple-soft-2: #EEE9F7;
+  --kivo-text-primary: #202020;
+  --kivo-text-secondary: #666666;
+  --kivo-border-soft: #EAE6DF;
+  --kivo-natural: #71805C;
+
+  --kivo-radius: 16px;
+  --kivo-radius-sm: 10px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  background: var(--kivo-bg);
+  color: var(--kivo-text-primary);
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, .kivo-logo, .kivo-hero-title, .kivo-section-title {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.kivo-navbar {
+  background: var(--kivo-card-bg);
+  border-bottom: 1px solid var(--kivo-border-soft);
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.kivo-logo {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--kivo-primary);
+}
+
+.kivo-navbar-page {
+  color: var(--kivo-text-secondary);
+  font-weight: 500;
+}
+
+.kivo-navbar-page::before {
+  content: "/";
+  margin-right: 0.75rem;
+  color: var(--kivo-border-soft);
+}
+
+.kivo-hero {
+  background: linear-gradient(135deg, var(--kivo-purple-soft-1) 0%, var(--kivo-bg) 65%);
+  padding: 3rem 1rem;
+}
+
+.kivo-hero-title {
+  color: var(--kivo-text-primary);
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.kivo-hero-subtitle {
+  color: var(--kivo-text-secondary);
+  margin-top: 0.5rem;
+}
+
+.kivo-section-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.kivo-accordion { margin-top: 0.5rem; }
+
+.kivo-faq-item {
+  background: var(--kivo-card-bg);
+  border: 1px solid var(--kivo-border-soft);
+  border-radius: var(--kivo-radius-sm);
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+}
+
+.kivo-faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.1rem 1.4rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  text-align: left;
+  color: var(--kivo-text-primary);
+  cursor: pointer;
+}
+
+.kivo-faq-chevron {
+  color: var(--kivo-primary);
+  transition: transform 0.25s ease;
+  flex-shrink: 0;
+}
+
+.kivo-faq-item.is-open .kivo-faq-chevron { transform: rotate(180deg); }
+
+
+.kivo-faq-answer-wrapper {
+  display: none;
+}
+
+.kivo-faq-item.is-open .kivo-faq-answer-wrapper {
+  display: block;
+}
+
+.kivo-faq-answer-inner p {
+  padding: 0 1.4rem 1.2rem;
+  color: var(--kivo-text-secondary);
+  line-height: 1.6;
+}
+
+/* ---------- FORMULARIO ---------- */
+.kivo-form-box {
+  background: var(--kivo-card-bg);
+  border: 1px solid var(--kivo-border-soft);
+  border-radius: var(--kivo-radius);
+  padding: 2rem;
+}
+
+.kivo-form-box .label {
+  color: var(--kivo-text-primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.kivo-form-box .input,
+.kivo-form-box .textarea {
+  border-radius: var(--kivo-radius-sm);
+}
+
+.kivo-form-box .input:focus,
+.kivo-form-box .textarea:focus {
+  border-color: var(--kivo-primary);
+  box-shadow: 0 0 0 3px rgba(91, 63, 181, 0.15);
+}
+
+.kivo-btn-primary {
+  background: var(--kivo-primary) !important;
+  border-color: var(--kivo-primary) !important;
+  color: #fff !important;
+  font-weight: 600;
+}
+
+.kivo-btn-primary:hover { background: var(--kivo-secondary) !important; }
+
+.kivo-success {
+  background: var(--kivo-purple-soft-2);
+  border: 1px solid var(--kivo-natural);
+  color: var(--kivo-text-primary);
+  border-radius: var(--kivo-radius-sm);
+  margin-top: 1.25rem;
+}
+
+/* ---------- FOOTER ---------- */
+.kivo-footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--kivo-text-secondary);
+  font-size: 0.85rem;
+}

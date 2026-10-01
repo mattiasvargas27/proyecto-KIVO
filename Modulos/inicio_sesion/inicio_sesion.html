@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <!-- BULMA -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    >
+
+    <!-- FUENTE INTER -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS DEL MÓDULO -->
+    <link
+        rel="stylesheet"
+        href="login.css"
+    >
+
+    <title>KIVO | Iniciar sesión</title>
+
+</head>
+
+
+<body id="bodyLogin">
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header
+        id="headerLogin"
+        class="section"
+    >
+
+        <div
+            id="headerLoginContainer"
+            class="container is-fluid"
+        >
+
+            <div
+                id="headerLoginContent"
+                class="level"
+            >
+
+                <!-- LOGO + VOLVER -->
+
+                <div
+                    id="headerLoginLeft"
+                    class="level-left"
+                >
+
+                    <div
+                        id="logoLoginContainer"
+                        class="level-item"
+                    >
+
+                       <a
+                            href="../inicio.html"
+                            id="logoKivo"
+                            class="logo-link"
+                        >
+                            KiVO
+                        </a>
+
+                    </div>
+
+
+                    <div
+                        id="backLoginContainer"
+                        class="level-item"
+                    >
+
+                        <a
+                            id="btnVolverInicioLogin"
+                            class="button"
+                            href="../inicio.html"
+                        >
+
+                            <span
+                                id="iconVolverLogin"
+                            >
+                                🏠
+                            </span>
+
+                            <span
+                                id="textVolverLogin"
+                            >
+                                Volver al inicio
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- REGISTRO -->
+
+                <div
+                    id="headerLoginRight"
+                    class="level-right"
+                >
+
+                    <span
+                        id="questionRegistro"
+                        class="level-item"
+                    >
+                        ¿Aún no tienes cuenta?
+                    </span>
+
+                    <a
+                        id="btnRegistroHeader"
+                        class="button"
+                        href="../registro/registro.html"
+                    >
+                        Regístrate
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         CONTENIDO
+    ====================================================== -->
+
+    <main
+        id="mainLogin"
+        class="section"
+    >
+
+        <div
+            id="loginContainer"
+            class="container"
+        >
+
+            <section
+                id="loginBox"
+                class="box"
+            >
+
+
+                <!-- =================================================
+                     ENCABEZADO
+                ================================================== -->
+
+                <div
+                    id="loginHeading"
+                    class="login-heading"
+                >
+
+                    <div
+                        id="loginIcon"
+                        class="login-icon"
+                    >
+                        👤
+                    </div>
+
+
+                    <div
+                        id="loginHeadingText"
+                    >
+
+                        <h1
+                            id="loginTitulo"
+                            class="title"
+                        >
+                            Inicia sesión
+                        </h1>
+
+                        <p
+                            id="loginSubtitulo"
+                            class="subtitle"
+                        >
+                            Bienvenido de nuevo a KIVO.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     FORMULARIO
+                ================================================== -->
+
+                <form
+                    id="loginForm"
+                >
+
+
+                    <!-- CORREO -->
+
+                    <div
+                        id="campoLoginCorreo"
+                        class="field"
+                    >
+
+                        <label
+                            id="labelLoginCorreo"
+                            class="label"
+                            for="inputLoginCorreo"
+                        >
+                            Correo electrónico
+                        </label>
+
+                        <div
+                            id="controlLoginCorreo"
+                            class="control has-icons-left"
+                        >
+
+                            <input
+                                id="inputLoginCorreo"
+                                class="input"
+                                type="email"
+                                placeholder="Ingresa tu correo electrónico"
+                            >
+
+                            <span
+                                id="iconLoginCorreo"
+                                class="icon is-small is-left"
+                            >
+                                ✉
+                            </span>
+
+                        </div>
+
+                        <p
+                            id="errorLoginCorreo"
+                            class="help error-message"
+                        ></p>
+
+                    </div>
+
+
+
+                    <!-- CONTRASEÑA -->
+
+                    <div
+                        id="campoLoginPassword"
+                        class="field"
+                    >
+
+                        <label
+                            id="labelLoginPassword"
+                            class="label"
+                            for="inputLoginPassword"
+                        >
+                            Contraseña
+                        </label>
+
+                        <div
+                            id="controlLoginPassword"
+                            class="control has-icons-left"
+                        >
+
+                            <input
+                                id="inputLoginPassword"
+                                class="input"
+                                type="password"
+                                placeholder="Ingresa tu contraseña"
+                            >
+
+                            <span
+                                id="iconLoginPassword"
+                                class="icon is-small is-left"
+                            >
+                                🔒
+                            </span>
+
+
+                            <button
+                                id="btnMostrarLoginPassword"
+                                class="password-toggle"
+                                type="button"
+                            >
+                                ◉
+                            </button>
+
+                        </div>
+
+                        <p
+                            id="errorLoginPassword"
+                            class="help error-message"
+                        ></p>
+
+                    </div>
+
+
+
+                    <!-- RECORDAR + OLVIDASTE -->
+
+                    <div
+                        id="loginOptions"
+                        class="login-options"
+                    >
+
+                        <label
+                            id="recordarContainer"
+                            class="checkbox"
+                        >
+
+                            <input
+                                id="checkboxRecordarme"
+                                type="checkbox"
+                            >
+
+                            <span
+                                id="recordarText"
+                            >
+                                Recordarme
+                            </span>
+
+                        </label>
+
+
+                        <a
+                            id="linkOlvidePassword"
+                            href="#"
+                        >
+                            ¿Olvidaste tu contraseña?
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- BOTÓN -->
+
+                    <div
+                        id="campoBtnLogin"
+                        class="field"
+                    >
+
+                        <div
+                            id="controlBtnLogin"
+                            class="control"
+                        >
+
+                            <button
+                                id="btnIniciarSesion"
+                                class="button is-fullwidth"
+                                type="submit"
+                            >
+                                Iniciar sesión
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         SEPARADOR
+                    ================================================== -->
+
+                    <div
+                        id="loginDivider"
+                        class="login-divider"
+                    >
+
+                        <span
+                            id="loginDividerLineLeft"
+                            class="divider-line"
+                        ></span>
+
+                        <span
+                            id="loginDividerText"
+                        >
+                            o continúa con
+                        </span>
+
+                        <span
+                            id="loginDividerLineRight"
+                            class="divider-line"
+                        ></span>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         REDES
+                    ================================================== -->
+
+                    <div
+                        id="loginSocialColumns"
+                        class="columns is-variable is-2"
+                    >
+
+                        <!-- GOOGLE -->
+
+                        <div
+                            id="loginGoogleColumn"
+                            class="column"
+                        >
+
+                            <button
+                                id="btnLoginGoogle"
+                                class="button social-button"
+                                type="button"
+                            >
+
+                                <span
+                                    id="loginGoogleIcon"
+                                    class="social-icon google-icon"
+                                >
+                                    G
+                                </span>
+
+                                <span
+                                    id="loginGoogleText"
+                                >
+                                    Google
+                                </span>
+
+                            </button>
+
+                        </div>
+
+
+                        <!-- FACEBOOK -->
+
+                        <div
+                            id="loginFacebookColumn"
+                            class="column"
+                        >
+
+                            <button
+                                id="btnLoginFacebook"
+                                class="button social-button"
+                                type="button"
+                            >
+
+                                <span
+                                    id="loginFacebookIcon"
+                                    class="social-icon facebook-icon"
+                                >
+                                    f
+                                </span>
+
+                                <span
+                                    id="loginFacebookText"
+                                >
+                                    Facebook
+                                </span>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         IMAGEN KIVO
+                    ================================================== -->
+
+                    <div
+                        id="loginPromoContainer"
+                        class="login-promo"
+                    >
+
+                        <img
+                            id="loginPromoImage"
+                            src="/Imagenes/KIVO inicio.png"
+                            alt="Productos y emprendimientos KIVO"
+                        >
+
+                        <div
+                            id="loginPromoOverlay"
+                        >
+
+                            <h2
+                                id="loginPromoTitle"
+                            >
+                                Descubre lo local,
+                                <br>
+                                elige lo
+                                <span id="loginPromoHighlight">
+                                    extraordinario
+                                </span>
+                                ✨
+                            </h2>
+
+                            <p
+                                id="loginPromoText"
+                            >
+                                Apoya emprendedores colombianos y
+                                encuentra productos únicos hechos
+                                con pasión.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         MODAL LOGIN
+    ====================================================== -->
+
+    <div
+        id="loginSuccessModal"
+        class="modal"
+    >
+
+        <div
+            id="loginModalBackground"
+            class="modal-background"
+        ></div>
+
+
+        <div
+            id="loginSuccessCard"
+            class="modal-card"
+        >
+
+            <header
+                id="loginSuccessHeader"
+                class="modal-card-head"
+            >
+
+                <p
+                    id="loginSuccessTitle"
+                    class="modal-card-title"
+                >
+                    ¡Sesión iniciada!
+                </p>
+
+            </header>
+
+
+            <section
+                id="loginSuccessBody"
+                class="modal-card-body"
+            >
+
+                <div
+                    id="loginSuccessIcon"
+                    class="success-icon"
+                >
+                    ✓
+                </div>
+
+                <p
+                    id="loginSuccessMessage"
+                >
+                    Bienvenido nuevamente a KIVO.
+                </p>
+
+            </section>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="login.js"></script>
+
+</body>
+
+</html>

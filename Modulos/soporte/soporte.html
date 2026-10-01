@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Soporte técnico · KiVO (boceto)</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="soporte.css" />
+  </head>
+  <body>
+    <!-- ============ NAVBAR SIMPLE (sin enlaces a otras páginas todavía) ============ -->
+    <nav class="kivo-navbar">
+      <span class="kivo-logo">KiVO</span>
+      <div id="backHomeContainer" class="level-item">
+        <a  id="btnVolverInicio" class="button">
+          <span id="backHomeIcon"> 🏠 </span>
+
+          <span id="backHomeText"> Volver al inicio </span>
+        </a>
+      </div>
+      <span class="kivo-navbar-page">Soporte técnico</span>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero kivo-hero">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title kivo-hero-title">¿En qué te podemos ayudar?</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PREGUNTAS FRECUENTES ============ -->
+    <section class="section kivo-section">
+      <div class="container">
+        <h2 class="kivo-section-title">Preguntas frecuentes</h2>
+
+        <div class="kivo-accordion" id="faqList">
+          <!-- ✏️ Duplica este bloque .kivo-faq-item por cada pregunta -->
+          <div class="kivo-faq-item">
+            <button class="kivo-faq-question" aria-expanded="false">
+              <span>[Escribe aquí la pregunta 1]</span>
+              <i class="fas fa-chevron-down kivo-faq-chevron"></i>
+            </button>
+            <div class="kivo-faq-answer-wrapper">
+              <div class="kivo-faq-answer-inner">
+                <p>[Escribe aquí la respuesta 1.]</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="kivo-faq-item">
+            <button class="kivo-faq-question" aria-expanded="false">
+              <span>[Escribe aquí la pregunta 2]</span>
+              <i class="fas fa-chevron-down kivo-faq-chevron"></i>
+            </button>
+            <div class="kivo-faq-answer-wrapper">
+              <div class="kivo-faq-answer-inner">
+                <p>[Escribe aquí la respuesta 2.]</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="kivo-faq-item">
+            <button class="kivo-faq-question" aria-expanded="false">
+              <span>[Escribe aquí la pregunta 3]</span>
+              <i class="fas fa-chevron-down kivo-faq-chevron"></i>
+            </button>
+            <div class="kivo-faq-answer-wrapper">
+              <div class="kivo-faq-answer-inner">
+                <p>[Escribe aquí la respuesta 3.]</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FORMULARIO DE CONTACTO ============ -->
+    <section class="section kivo-section">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-7">
+            <div class="box kivo-form-box">
+              <h2 class="kivo-section-title">Escríbenos</h2>
+
+              <form id="soporteForm">
+                <div class="field">
+                  <label class="label">Nombre</label>
+                  <div class="control">
+                    <input
+                      class="input"
+                      type="text"
+                      name="nombre"
+                      placeholder="Tu nombre"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label">Correo electrónico</label>
+                  <div class="control">
+                    <input
+                      class="input"
+                      type="email"
+                      name="correo"
+                      placeholder="tucorreo@ejemplo.com"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label">Mensaje</label>
+                  <div class="control">
+                    <textarea
+                      class="textarea"
+                      name="mensaje"
+                      rows="4"
+                      placeholder="Cuéntanos qué pasó"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+
+                <button
+                  type="submit"
+                  class="button kivo-btn-primary is-rounded is-medium"
+                >
+                  <span class="icon"><i class="fas fa-paper-plane"></i></span>
+                  <span>Enviar</span>
+                </button>
+              </form>
+
+              <div class="notification kivo-success is-hidden" id="formSuccess">
+                ✓ Mensaje enviado.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="kivo-footer">
+      <p>© 2026 KiVO</p>
+    </footer>
+
+    <script src="soporte.js"></script>
+  </body>
+</html>
